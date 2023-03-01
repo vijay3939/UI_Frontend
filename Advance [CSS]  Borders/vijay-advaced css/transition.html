@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            animation-name: text;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            width: fit-content;
+
+        }
+
+        @keyframes text{
+            0%{
+                font-size: 10px;
+                transform: rotate(0deg);
+            
+            }
+            50%{
+                font-size: 0px;
+                transform: rotate(180deg);
+            }
+            100%{
+                font-size: 100px;
+                transform: rotate(360deg);
+            }
+        }
+
+       
+        img{
+            border: 2px solid;
+            width: 150px;
+            padding: 10px;
+            /* background-color: black; */
+            color: white;
+            transition: width, 4s, hight, 4s;
+        }
+
+        img:hover{
+        
+            width: 400px;
+            /* height: 400px; */
+            /* background-color: red; */
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+<div>
+    <h1>welcome</h1>
+
+    <img src="./rose2.jpg" alt="">
+</div>
+
+</body>
+</html>

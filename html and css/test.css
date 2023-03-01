@@ -1,0 +1,42 @@
+h1{
+    color: red;
+background-color:lightgray;
+}
+.para1{
+    font-family: sans-serif;
+    background-color: darkblue;
+    color: goldenrod;
+    border: 11px solid red;
+    box-shadow: 2px 3px 4px deepskyblue;
+    border-radius: 33px;
+}
+
+.para2{
+    width: 600px;
+    border: 4px solid;
+    border-radius: 13px;
+    box-shadow: 3px 4px 5px red;
+    font-style: italic;
+    color: black;
+    background-color: blanchedalmond;
+}
+button {
+    font-family: sans-serif;
+    background-color: greenyellow;
+    color: white;
+    border: 3px solid red;
+    box-shadow: 2px 3px 4px blue;
+    border-radius: 60px;
+}
+a {
+    font-size: 22px;
+}
+.para3{
+    
+        width: 600;
+        border: 4px solid;
+        box-shadow: 26px 26px 23px blue;
+        font-style: oblique;
+        color: revert;
+        background-color: deeppink;
+    }

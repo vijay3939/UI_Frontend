@@ -1,0 +1,258 @@
+.container {
+    /* background: darkgoldenrod; */
+    width: 1250px;
+    margin: 0 auto;
+}
+.a {
+    background: black;
+    color: white;
+    width: 1079px;
+    margin: 0 AUTO;
+}
+.b {
+    background: black;
+    color: white;
+    width: 260px;
+    margin-left: 889px;
+    margin-top: -58px;
+}
+
+
+.c {
+    background-color: lightseagreen;
+    width: 1079px;
+    margin: 0 auto;
+    position: sticky;
+    top: 161px;
+}
+ul {
+    list-style-type: none;
+    background-color: chocolate;
+    width: 1039px;
+    margin-top: 46px;
+    height: 53px;
+}
+li {
+    border: 2px solid;
+    width: 100px;
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    margin: 21px;
+}
+li {
+    border: 2px solid;
+    width: 100px;
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    /* margin: 21px; */
+    position: relative;
+    top: 18px;
+}
+button {
+    background: orange;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 1px;
+}
+input[type="search"] {
+    border-radius: 6px;
+    border: 2px solid red;
+    padding: 2px;
+}
+p {
+    margin-top: -20px;
+}
+/* .A {
+    color: whitesmoke;
+    padding: 17px;
+    margin: 9px;
+    background-color: darkslategrey;
+    margin-left: 85px;
+    width: 422px;
+    height: 171px;
+    margin-top: 44px;
+} */
+/* img {
+    margin-left: 60px;
+    width: 626px;
+    height: 169px;
+    margin-left: 541px;
+    margin-top: -178px;
+    margin-bottom: 29px;
+} */
+/* a {
+    color: darkorange;
+    margin-left: 342px;
+    text-decoration: none;
+} */
+
+/* .mi{
+    padding: 19px;
+    margin-top: -19px;
+    width: 674px;
+    margin-left: 69px;
+    margin-left: 85px;
+    width: 489px;
+} */
+
+/* #fan img{
+    width: 130px;
+    margin-left: 600px;
+    margin-top: -182px;
+    display: inli ne-block;
+} */
+
+/* #chair img {
+    width: 130px;
+    margin-left: 798px;
+    margin-top: -206px;
+    display: inline-block;
+    height: 179px;
+} */
+
+/* #light img{
+    margin-left: 60px;
+    width: 130px;
+    height: 169px;
+    margin-left: 1009px;
+    margin-top: -210px;
+    margin-bottom: 44px;
+} */
+
+/* #switch a{
+    margin-left: 739px;
+} */
+
+
+.second {
+    /* border: 1px solid; */
+    width: 1078px;
+    margin: 0 auto;
+    overflow:  auto;
+}
+.A {
+    width: 510px;
+    float: left;
+    /* background-color: bisque; */
+    height: 172px;
+    
+}
+.B {
+    width: 568px;
+    float: right;
+    /* background-color: bisque; */
+    height: 172px;
+}
+.B img {
+    width: 568px;
+    height: 168px;
+}
+
+a.anchor1 {
+    float: right;
+    margin-right: 47px;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.third {
+    width: 1077px;
+    /* border: 1px solid;  */
+    margin: 0 auto;
+    overflow: auto;
+    /* background-color: chartreuse; */
+}
+.mi {
+    width: 510px;
+    float: left;
+    /* background-color: bisque; */
+    /* height: 172px; */
+    
+}
+.realme {
+    width: 500px;
+    float: right;
+    /* background-color: bisque; */
+    /* height: 172px; */
+    margin-top: 38px
+}
+/* #fan img {
+    width: 120px;
+    height: 120px;
+} */
+#fan img {
+    width: 120px;
+    margin: 20px;
+    height: 120px;
+}
+.switch{
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
+div#fan {
+    /* width: 150px\he; */
+    width: 150px;
+    height: 150px;
+    display: inline;
+}
+.anchordiv a {
+    /* background-color: black; */
+    margin-left: 109px;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+.anc{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold; 
+}
+
+.four{
+    /* border: 2px solid; */
+    width: 1060px;
+    overflow: auto;
+    margin: auto;
+    /* margin-right: 108px; */
+}
+
+.ONE {
+    width: 300px;
+    float: left;
+    /* background-color: burlywood; */
+    height: 250px;
+    font-size: 16px;
+    /* margin: auto; */
+    color: blue;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+
+
+.TWO{
+    width: 300px;
+   float: left;
+}
+
+
+.THREE{
+    width: 460px;
+   float: left;
+}
+
+img {
+    width: 120px;
+    margin: 20px;
+    height: 120px;
+}
+
+

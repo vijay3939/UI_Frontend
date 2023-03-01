@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    color: #fff;
+    /* font-family: sans-serif;  */
+    background: #000;
+    text-align: center;
+}
+.loader {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border: dotted dotted transparent;
+    border-top: dotted 5px rgb(255, 0, 157);
+    border-radius: 150px;
+    -webkit-animation: mid 1.5s linear infinite;
+}
+@-webkit-keyframes mid{
+    0%{
+        transform: rotatez(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+#loader {
+    margin: 0 auto;
+    position: relative;
+    width: 155px;
+    height: 155px;
+    margin-top: -174px;
+    border: dotted dotted transparent;
+    border-top: dotted 4px red;
+    border-radius: 80px;
+    -webkit-animation: top 1.5s linear infinite;
+}
+@-webkit-keyframes top{
+    0%{
+     transform:  rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+.load{
+    margin: 0 auto;
+    position: relative;
+    width: 115px;
+    height: 115px;
+    margin-top: -137px;
+    border: dotted dotted transparent;
+    border-top: dotted 3px blue;
+    border-radius: 93px;
+    -webkit-animation: top 1.5s linear infinite;
+}
+@-webkit-keyframes top{
+    0%{
+        transform: rotatez(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+.loa{
+    margin: 0 auto;
+    position: relative;
+    width: 77px;
+    height: 77px;
+    margin-top: -100px;
+    border: dotted dotted transparent;
+    border-top: dotted green;
+    border-radius: 80px;
+    -webkit-animation: top 1.5s linear infinite;
+}
+@-webkit-keyframes top{
+    0%{
+        transform: rotatez(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+.lo{
+    margin: 0 auto;
+    position: relative;
+    width: 244px;
+    height: 244px;
+    margin-top: -181px;
+    border: dotted dotted transparent;
+    border-top: dotted 6px rgb(8, 178, 245);
+    border-radius: 149px;
+    -webkit-animation: top 1.5s linear infinite;
+}
+@-webkit-keyframes top{
+    0%{
+        transform: rotatez(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+.l{
+    margin: 0 auto;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin-top: -133px;
+    border: dotted dotted transparent;
+    border-top: dotted brown;
+    border-radius: 85px;
+    -webkit-animation: top 1.5s linear infinite;
+}
+@-webkit-keyframes top{
+    0%{
+        transform: rotatez(0deg);
+        -webkit-transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+.glow{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -29px;
+    width: 28px;
+    height: 12px;
+    color: black;
+    font-size: 10px;
+    border-radius:50px;
+    background: black;
+    box-shadow: 0px 0px 10px 6px rgb(17, 17, 17);
+    -webkit-animation: glowing 10s linear infinite;
+}
+
+@-webkit-keyframes glowing{
+    0%{
+        background:green;
+        box-shadow: 0px 0px 10px 6px crimson;
+    }
+    14%{
+        background: #fff;
+        box-shadow: 0px 0px 10px 6px #fff;
+    }
+    28%{
+        background:indigo;
+        box-shadow: 0px 0px 10px 6px #000;
+    }
+    42%{
+        background: #ff3f18;
+        box-shadow: 0px 0px 10px 6px #ff3f18;
+    }
+    56%{
+        background:yellow;
+        box-shadow: 0px 0px 10px 6px slateblue;
+    }
+
+    60%{
+        background: #1ff22a;
+        box-shadow: 0px 0px 10px 6px aqua;
+    }
+    76%{
+        background:brown;
+        box-shadow: 0px 0px 10px 6px saddlebrown ;
+    }
+    88%{
+        background: #ed23ff;
+        box-shadow: 0px 0px 10px 6px #2377ff ;
+    }
+    100%{
+        background: rgb(243, 3, 3);
+        box-shadow: 0px 0px 10px 6px gray ;
+    }
+}
+
+.text {
+    text-align: center;
+    margin-top: 128px;
+    font-size: 40px;
+    /* font-style: italic; */
+    color: cornsilk;
+}
+.text::after{
+    content: '..';
+    -webkit-animation: dots 2.5s linear infinite;
+}
+
+@-webkit-keyframes dots{
+    0%{
+        content:'.';
+    }
+    10%{
+        content:'..' ;
+    }
+    20%{
+        content:'...';
+    }
+    40%{
+        content:'....';
+    }
+    60%{
+        content:'.....';
+    }
+    80%{
+        content:'......';
+    }
+    100%{
+        content:'.......';
+    }
+}
+
+
+.loader {
+  animation-name: example;
+  animation-duration: 10s;
+  margin: 0 auto;
+}
+@keyframes example {
+  0%   {background-color: brown;}
+  5%   {background-color: chartreuse;}
+  10%  {background-color: darkorange;}
+  15%  {background-color: grey;}
+  20%  {background-color: maroon;}
+  25%  {background-color: rgb(98, 4, 117);}
+  30%  {background-color: purple;}
+  35%  {background-color: blue;}
+  40%  {background-color: skyblue;}
+  45%  {background-color: olive;}  
+  50%  {background-color: rgb(172, 9, 99);}
+  55%  {background-color: rosybrown ;}
+  60%  {background-color: darkgoldenrod;}
+  65%  {background-color: red;}
+  70%  {background-color: hotpink;}
+  75%  {background-color: springgreen; }
+  80%  {background-color: tomato;}
+  85%  {background-color: whitesmoke;}
+  90%  {background-color: black;}
+  95%  {background-color: chartreuse;}
+  100% {background-color: rgb(243, 239, 6);}
+}
+
+
+
+</style>
+<body>
+  <div class="loader"></div>
+  <div id="loader"></div>
+  <div class="load"></div>
+  <div class="loa"></div>
+  <div class="lo"></div>
+  <div class="l"></div>
+  <div class="glow"></div>
+  <div class="text"><b>Searching.</b></div>  
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./dog.css">
+</head> 
+
+<style>
+
+  *{
+
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+
+           background -image: url(./3939.jpg);
+          background-size: 100%;
+          margin-top: 20px;
+          margin-left: 20px;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: orange;
+  }
+
+  ul{
+        list-style-type: none;
+     }
+  
+  ul li:hover{
+
+               background-color: green;
+               color: white;
+  }   
+
+     ul li{
+      float: left;
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      background-color: royalblue;
+      text-align: center;
+      font-size: 22px;
+      border-radius: 25px;
+      opacity: 2.9;
+
+     }
+
+     ul li ul{
+      display: none;
+     }
+
+     ul li:hover > ul{
+      display: block;
+     }
+
+     ul li ul li {
+
+                   position: relative;
+     }
+
+     ul li ul li ul{
+
+                 position: absolute;
+                 margin-left: 200px;
+                 top: 0px;
+     }
+
+
+
+
+ 
+</style>
+
+<body>
+
+         <ul>
+              <li> <a href="#">home        </a></li>
+              <li> <a href="#">about       </a></li>
+              <li> <a href="#">courses     </a>
+                  
+                   <ul> 
+
+                    <li> <a href="#"> ms office         </a>
+
+                           <ul>
+                                <li> <a href="#"> word         </a></li>
+                                <li> <a href="#"> excel        </a></li>
+                                <li> <a href="#"> power point  </a></li>
+                                <li> <a href="#"> access       </a></li>
+
+                            </ul>
+                    
+                    </li>
+
+                    
+                    <li> <a href="#"> wed development   </a>
+
+
+                      <ul>
+                        <li> <a href="#"> html         </a></li>
+                        <li> <a href="#"> css        </a></li>
+                        <li> <a href="#">java  </a></li>
+                        
+
+                    </ul>
+                    
+                    
+                    
+                    </li>
+
+
+                    <li> <a href="#"> tally             </a></li>
+                    
+                    
+                  </ul>
+              
+              
+              
+              </li>
+
+
+              <li><a href="#">careers     </a></li>
+              <li><a href="#">contact us  </a></li>
+
+         </ul>
+        
+          
+
+
+
+
+     
+
+ 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+
+</html>

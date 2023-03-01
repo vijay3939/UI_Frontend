@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        .first{
+            border: 2px solid white;
+            width: 250px;
+            height: 250px;
+            border-radius: 150px ;
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            border-top: 2px solid red;
+            -webkit-animation: top 2s linear infinite;
+            box-shadow: 3px 3px 3px yellow;
+
+
+        }
+
+@-webkit-keyframes top{
+    0%{transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+        -webkit-transform:rotateZ(360deg);
+    }
+}
+
+
+.second{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+ 
+}
+
+.second::after{
+    content:'..';
+    -webkit-animation: dots 2s linear infinite;
+}
+
+@-webkit-keyframes dots {
+
+    0%{
+        content:'.';
+    }
+    10%{
+        content: '..';
+    }
+
+    30%{
+        content: '...';
+    }
+
+    50%{
+        content: '....';
+    }
+
+    70%{
+        content: '....';
+    }
+
+    100%{
+        content: 'sucessful';
+    }
+
+}
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="first"></div>
+
+    <div class="second">Searching</div>
+    
+</body>
+</html>

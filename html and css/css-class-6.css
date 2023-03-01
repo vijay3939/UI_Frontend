@@ -1,0 +1,188 @@
+.container {
+    /* width: 1400px; */
+    /* background-color: chocolate; */
+    margin: auto;
+    margin-top: 69px;
+    height: 1400px;
+}
+
+.a {
+    width: 1200px;
+    color: white;
+    /* margin: 12px; */
+    padding: 9px;
+    background-color:black;
+    margin: auto;
+}
+.b {
+    /* background-color: goldenrod; */
+    width: 625px;
+    margin-left: 952px;
+    margin-top: -90px;
+}
+
+li {
+    /* border: 1px solid white; */
+    /* list-style-type: none; */
+    width: 97px;
+    display: inline;
+    padding: 6px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.para2 {
+    /* background-color: lightgray; */
+    color: royalblue;
+    width: 440px;
+    height: 290px;
+    margin-left: 282px;
+    margin-top: 70px;
+}
+
+a.Categories {
+    margin: 20px;
+    color: royalblue;
+}
+
+
+
+.para2\.1 {
+    /* background-color: blueviolet; */
+    width: 750px;
+    margin-left: 755px;
+    margin-top: -311px;
+    /* padding: 12px; */
+    height: 300px;
+}
+
+a.anc {
+    color: orange;
+}
+
+p.para2\.4 {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.para3 {
+    /* background-color: darkcyan; */
+    width: 435px;
+    margin-left: 283px;
+    margin-top: 33px;
+    /* color: lightblue; */
+}
+
+a.Links {
+    color: blue;
+    margin: 25px;
+}
+
+.para3 a:hover{
+    color: orange;
+
+}
+
+.para4 {
+    /* background-color: violet; */
+    width: 434px;
+    margin-left: 282px;
+    margin-top: 62px;
+    /* color: lightblue; */
+}
+a.Blogroll {
+    color: blue;
+    margin: 29px;
+}
+
+.para4 a:hover{
+
+    color: orange;
+}
+
+.para5 {
+    /* background-color: chocolate; */
+    width: 776px;
+    margin-left: 753px;
+    margin-top: -716px;
+}
+
+/* .para5\.2 {
+    background-color: burlywood;
+} */
+
+li#li {
+    display: list-item;
+    width: 397px;
+    margin-left: 28px;
+}
+
+.para5\.4 {
+    background-color: lightgray;
+}
+
+.SIX {
+    /* background-color: blue; */
+    width: 777px;
+    margin-left: 751px;
+}
+
+.para6 {
+    /* background-color: chartreuse; */
+    width: 370px;
+}
+
+img {
+    border: 4px solid red;
+    width: 362px;
+    height: 113px;
+}
+
+
+a#anchor {
+    color: orange;
+    /* float: right; */
+    margin-left: 242px;
+}
+    
+/* .SIX {
+    background-color: blue;
+    width: 777px;
+    margin-left: 751px;
+} */
+
+.para6\.a {
+    /* background-color: burlywood; */
+    width: 372px;
+    /* float: right; */
+    margin-top: -358px;
+    margin-left: 405px;
+}
+
+/* img {
+    border: 4px solid red;
+    width: 342px;
+    height: 113px;
+} */
+
+
+
+.SEVEEN {
+    background-color: black;
+    color: white;
+    margin-top: 21px;
+    height: 58px;
+}
+
+.foot1 {
+    margin-left: 254px;
+    padding: 19px;
+}
+
+.foot2 {
+    margin-left: 1350px;
+    margin-top: -40px;
+}

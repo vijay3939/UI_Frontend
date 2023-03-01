@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px dotted rgb(3, 255, 255);
+  margin-top: 20px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px 0;
+  border-radius: 10px;  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 143%;
+  left: 85%;
+  margin-left: -60px;
+  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+body {
+    background-color: black;
+    color: white;
+}
+h2 {
+    color: brown;
+    font-size: 40px;
+    font-style: italic;
+}
+p {
+    font-size: 21px;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Surya KRS SP</h2>
+<p>touch to over the text below:</p>
+
+<div class="tooltip">Surya Love SP
+  <span class="tooltiptext"><b>SSP</b></span>
+</div>
+
+</body>
+</html>
+
+
