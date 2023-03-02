@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practies 2</title>
+</head>
+
+<body>
+
+
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="name"> <br><br>
+
+        <label for="">Email</label>
+        <input type="text" id="class"> <br><br>
+
+        <label for="">Mobile no</label>
+        <input type="text" id="number"> <br><br>
+
+        <label for="">Group</label>
+        <input type="text" id="group"> <br><br>
+
+        <input type="text" id="id" hidden>
+    </form>
+
+
+    <button type="button" onclick="Adding()" id="add">Add person</button>
+
+    <button type="button" onclick="Updatedata()" id="up" style="display: none;">Edit</button>
+
+
+    <br><br>
+
+    <table border="1">
+        <thead>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Mobile</th>
+            <th>Group</th>
+            <th>ID</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+
+    </table>
+
+    <script>
+
+        var info = []
+
+
+        function Adding() {
+            var user = {
+
+                name: "",
+                class: "",
+                number: "",
+                group: ""
+            }
+
+            for (a in user) {
+                user[a] = document.getElementById(a).value
+            }
+
+            var postUser = new XMLHttpRequest()
+
+            postUser.onreadystatechange = function () {
+                if (postUser.status == 201 && postUser.readyState == 4) {
+
+                }
+            }
+
+            postUser.open("post", "http://localhost:3000/object");
+            postUser.setRequestHeader("Content-type", "application/json")
+            postUser.send(JSON.stringify(user))
+
+        }
+
+        function displaymyinfo() {
+            var data = new XMLHttpRequest()
+            data.onreadystatechange = function () {
+
+                if (data.readyState == 4 && data.status == 200) {
+                    info = JSON.parse(data.response)
+                    managetable(info)
+                }
+            }
+            var url = "http://localhost:3000/object"
+            data.open("GET", url)
+            data.send()
+        }
+
+        function managetable(info) {
+            for (i = 0; i < info.lenght; i++) {
+
+                var mytr = document.createElement("tr")
+
+                for (a in info[0]) {
+                    var mytd = document.createElement("td")
+                    mytd.innerHTML = info[i][a]
+                    mytr.appendChild(mytd)
+                }
+
+                document.querySelector("tbody").appendChild(mytd)
+
+                var editTd = document.createElement("td")
+                var deleteTd = document.createElement("td")
+                mytr.appendChild(editTd)
+                mytr.appendChild(deleteTd)
+
+                var editBtn = document.createElement("button");
+                editBtn.innerHTML = "EDIT"
+                editBtn.setAttribute("onclick", "editUser(" + i + ")")
+
+
+                var deleteBtn = document.createElement("button");
+                deleteBtn.innerHTML = "DELETE"
+                deleteBtn.setAttribute("onclick", "deleteUser(" + i + ")")
+
+
+                editTd.appendChild(editBtn)
+                deleteTd.appendChild(deleteBtn)
+            }
+        }
+        displaymyinfo()
+
+
+        function editUser(i) {
+            for (a in info[i]) {
+                document.getElementById(a).value = info[i][a]
+            }
+
+            document.getElementById("add").style.display = "none"
+            document.getElementById("up").style.display = "block"
+        }
+
+
+
+        function deleteUser(i) {
+
+            var postUser = new XMLHttpRequest()
+
+            postUser.onreadystatechange = function () {
+                if (postUser.status == 200 && postUser.readyState == 4) {
+
+                }
+            }
+            postUser.open("Delete", "http://localhost:3000/object/" + info[i].id);
+            postUser.send()
+        }
+
+
+        function Updatedata() {
+
+            var user = {
+                name: "",
+                class: "",
+                number: "",
+                group: "",
+                id: ""
+            }
+
+            for (a in user) {
+                user[a] = document.getElementById(a).value
+            }
+
+            var postUser = new XMLHttpRequest()
+
+            postUser.onreadystatechange = function () {
+                if (postUser.status == 201 && postUser.readyState == 4) {
+                    document.getElementById("add").style.display = "block"
+                    document.getElementById("up").style.display = "none"
+                }
+            }
+
+            postUser.open("put", "http://localhost:3000/object/" + user.id);
+            postUser.setRequestHeader("content-Type", "application/json")
+            postUser.send(JSON.stringify(user))
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

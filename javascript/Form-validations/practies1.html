@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation 1</title>
+</head>
+
+<body>
+
+    <form action="">
+        <br><br>
+
+        <label for="">UserName</label>
+        <input type="text" id="name" onkeyup="GetUser()">
+
+        <p style="color:orange;" id="para1">Enter Altlest 6 charcter</p>
+        <br><br>
+
+        <label for="">Password</label>
+        <input type="text" id="password" onkeyup="GetUser()">
+
+        <p style="color:orange;" id="para2">Enter altlest 12 charcter number</p>
+
+        <br><br>
+
+        <button type="button" disabled>Submit</button>
+    </form>
+
+
+    <script>
+
+        function GetUser() {
+            var user = {
+                name: document.getElementById('name').value,
+                password: document.getElementById('password').value
+            }
+
+
+            if (user.name.length >= 6) {
+
+                document.getElementById("para1").style.display = "none"
+                document.querySelector("button").removeAttribute("disabled")
+            } else { 
+                document.getElementById("para1").style.display = "block"
+                document.querySelector("button").setAttribute = ("disabled", true)
+            }
+
+
+
+
+
+            if (user.password.length >= 12) {
+                document.getElementById("para2").style.display = "none"
+                document.querySelector("button").removeAttribute("disabled")
+            } else {
+                document.getElementById("para2").style.display = "block"
+                document.querySelector("button").setAttribute = ("disabled", true)
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

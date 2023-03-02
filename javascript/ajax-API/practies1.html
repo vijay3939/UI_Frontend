@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: rgb(83, 10, 219);
+        }
+
+        .hedding {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            text-shadow: 2px 6px 2px wheat;
+
+
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        label {
+            font-size: 25px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .tbl {
+            /* margin-left: 600px; */
+            /* margin-top: -400px; */
+            height: 100vh;
+            background-color: lightgray;
+            color: navy;
+
+
+        }
+
+        .BUT {
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="w-100 d-flex flex-row justify-content-between">
+
+        <div class="col-6">
+            <h2 class="hedding "><u>FORM DETAILS</u></h2>
+
+            <form>
+                <label for="">NAME</label>
+                <input class="form-control w-100 " type="text" name="" id="name"><br><br>
+
+                <label for="">EMAIL</label>
+                <input class="form-control w-100 " type="text" name="" id="class"><br><br>
+
+                <label for="">MOBILE NO</label>
+                <input class="form-control w-100 " type="text" name="" id="number"><br><br>
+
+                <label for="">GROUP</label>
+                <input class="form-control w-100 " type="text" name="" id="group">
+
+
+                <input type="text" name="" id="id" hidden>
+            </form>
+
+            <button class=" BUT btn btn-dark ms-lg-4 w-25 " type="button" onclick="Adding()" id="add"><SPan
+                    class="bi bi-person"> Add person</SPan></button>
+
+            <button class=" BUT btn btn-danger ms-lg-4 w-25" type="button" onclick="Updatedata()" id="up"
+                style="display: none;">Edit</button>
+        </div>
+
+        <div class="table-responsive col-6 tbl">
+
+            <table border="2" class="table">
+                <thead>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Mobile</th>
+                    <th>Group</th>
+                    <th>ID</th>
+                    <th>Edit</th>
+                    <th>Delect</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+        <br><br>
+
+
+
+
+
+
+
+        <script>
+
+            var info = []
+
+            function Adding() {
+                var user = {
+                    name: "",
+                    class: "",
+                    number: "",
+                    group: ""
+
+                }
+
+                for (a in user) {
+                    user[a] = document.getElementById(a).value
+                }
+
+                var postUser = new XMLHttpRequest()
+
+                postUser.onreadystatechange = function () {
+                    if (postUser.status == 201 && postUser.readyState == 4) {
+
+                    }
+                }
+
+                postUser.open("post", "http://localhost:3000/object");
+                postUser.setRequestHeader("Content-type", "application/json")
+                postUser.send(JSON.stringify(user))
+
+            }
+
+
+            function displaymyinfo() {
+                var data = new XMLHttpRequest()
+                data.onreadystatechange = function () {
+                    if (data.readyState == 4 && data.status == 200) {
+                        info = JSON.parse(data.response)
+                        managetable(info)
+                    }
+                }
+                var url = "http://localhost:3000/object"
+                data.open("GET", url)
+                data.send()
+            }
+
+            function managetable(info) {
+                for (i = 0; i < info.length; i++) {
+
+                    var mytr = document.createElement("tr")
+
+                    for (a in info[0]) {
+                        var mytd = document.createElement("td")
+                        mytd.innerHTML = info[i][a]
+                        mytr.appendChild(mytd)
+                    }
+
+                    document.querySelector("tbody").appendChild(mytr)
+
+                    var editTd = document.createElement("td")
+                    var deleteTd = document.createElement("td")
+                    mytr.appendChild(editTd)
+                    mytr.appendChild(deleteTd)
+
+                    var editBtn = document.createElement("button");
+                    editBtn.innerHTML = "EDIT"
+                    editBtn.style.Color = "green"
+                    editBtn.style.backgroundColor = "white"
+
+                    editBtn.setAttribute("onclick", "editUser(" + i + ")")
+
+                    var deleteBtn = document.createElement("button");
+                    deleteBtn.innerHTML = "DELETE"
+                    deleteBtn.style.backgroundColor = "gold"
+                    deleteBtn.setAttribute("onclick", "deleteUser(" + i + ")")
+
+                    editTd.appendChild(editBtn)
+                    deleteTd.appendChild(deleteBtn)
+
+                }
+            }
+            displaymyinfo()
+
+
+            function editUser(i) {
+                for (a in info[i]) {
+                    document.getElementById(a).value = info[i][a]
+                }
+                // document.getElementById("add").style.display = "none"
+                // document.getElementbyId("up").style.display = "block"
+                document.getElementById("add").style.display = "none"
+                document.getElementById("up").style.display = "block"
+
+            }
+
+            function deleteUser(i) {
+                console.log('index number', i)
+                var postUser = new XMLHttpRequest()
+                postUser.onreadystatechange = function () {
+                    if (postUser.status == 200 && postUser.readyState == 4) {
+
+                    }
+
+                }
+                postUser.open("Delete", "http://localhost:3000/object/" + info[i].id);
+                postUser.send()
+
+            }
+
+            function Updatedata() {
+                var user = {
+                    name: "",
+                    class: "",
+                    number: "",
+                    group: "",
+                    id: ""
+
+                }
+                for (a in user) {
+                    user[a] = document.getElementById(a).value
+                }
+
+                var postUser = new XMLHttpRequest()
+                postUser.onreadystatechange = function () {
+                    if (postUser.status == 200 && postUser.readyState == 4) {
+                        document.getElementById("add").style.display = "block"
+                        document.getElementById("up").style.display = "none"
+
+                    }
+                }
+
+                postUser.open("put", "http://localhost:3000/object/" + user.id);
+                postUser.setRequestHeader("content-Type", "application/json")
+                postUser.send(JSON.stringify(user))
+            }
+
+
+
+
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* body {
+        margin-left: 350px;
+        margin-top: 50px;
+    } */
+</style>
+
+<body>
+    <table>
+        <form action="">
+
+            <tr>
+                <td> <label for="">Student Name</label></td>
+                <td>
+                    <input type="text" name="" id="studentName" onkeyup="StdValidate()"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: red; " id="studentError">Please Enter Full Name Of The Student</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Father Name</label></td>
+                <td><input type="text" name="" id="father" onkeyup="StdValidate()"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: red;" id="fatherError">Please Enetr Student's Father Name</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="text" name="" id="email" onkeyup="StdValidate()"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: red;" id="emailError">Please Enetr Valid Email</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Roll no</label></td>
+                <td><input type="text" name="" id="rollNo" onkeyup="StdValidate()"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: red;" id="rollNoError">Please Enter Your Roll Numbner</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">City</label></td>
+                <td><input type="text" name="" id="city" onkeyup="StdValidate()"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: red;" id="cityError">Please Enter Your City</P>
+                </td>
+            </tr>
+
+        </form>
+
+    </table>
+
+    <button disabled>Click</button>
+
+
+
+
+    <script>
+        function StdValidate() {
+            var studentName = document.getElementById("studentName").value
+            var father = document.getElementById("father").value
+            var email = document.getElementById("email").value
+            var rollNo = document.getElementById("rollNo").value
+            var city = document.getElementById("city").value
+
+            if (studentName.length >= 5) {
+                document.getElementById("studentError").style.display = "none"
+            } else {
+                document.getElementById("studentError").style.display = "block"
+            }
+
+            if (father.length >= 7) {
+                document.getElementById("fatherError").style.display = "none"
+            } else {
+                document.getElementById("fatherError").style.display = "block"
+            }
+
+            if (email.length >= 1) {
+                document.getElementById("emailError").style.display = "none"
+            } else {
+                document.getElementById("emailError").style.display = "block"
+            }
+
+            if (rollNo.length >= 4) {
+                document.getElementById("rollNoError").style.display = "none"
+            } else {
+                document.getElementById("rollNoError").style.display = "block"
+            }
+
+            if (city.length >= 6) {
+                document.getElementById("cityError").style.display = "none"
+            } else {
+                document.getElementById("cityError").style.display = "block"
+            }
+
+            if (studentName.length >= 5 && father.length >= 7 && email.length >= 1 && rollNo.length >= 4 && city.length >= 6) {
+                document.querySelector("button").removeAttribute("disabled")
+
+            } else {
+                document.querySelector("button").setAttribute("disabled", true)
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuction</title>
+</head>
+
+<body>
+
+    <!-- <h1></h1>
+    <h2 class="gopi"></h2>
+    <h3 class="class3"></h3>
+    <h4 name="name4"></h4>
+    <h5></h5>
+    <h6></h6>
+    <button type="button" onclick="sayHello()">Submit</button> -->
+    <br>
+    <br>
+    <br>
+
+   
+
+
+    <script>
+        // argument function
+
+        function sayHello() {
+            console.log("Argument function");
+        }
+        sayHello()
+
+        // ---------------------------
+        //  call back
+
+        var sayHello = function () {
+            console.log("This call back fuction")
+        }
+        sayHello()
+
+        // ---------------------------
+
+        //  inside orgiument function
+
+        var sayHello = function hellworld() {
+            console.log("This insde orgiument fuction");
+        }
+
+        sayHello()
+
+        // ---------------------------
+
+        // fat arrow function
+
+        var sayHello = () => {
+            console.log("This fat arrow fuction")
+
+        }
+
+        sayHello()
+
+            // ---------------------------
+
+            //  Es5 self invoking function
+
+            (function () {
+                console.log("This Es5 script fuction");
+            })()
+
+            // ---------------------------
+
+            //  Es6 innediatly   invoking function
+
+            (() => {
+                console.log("Es6 fuction");
+            })()
+
+
+
+    </script>
+
+
+    <script>
+        function helo() {
+            console.log("hi")
+        }
+        helo()
+
+        var helo = function () {
+            console.log("call back ")
+        }
+        helo()
+
+        var helo = function hi() {
+            console.log("inside")
+        }
+        helo()
+
+        var helo = () => {
+            console.log("fat arrow")
+        }
+        helo()
+
+
+            (function () {
+                console.log("es 5 ")
+            })()
+
+            (() => {
+                console.log("es 6")
+            })()
+
+    </script>
+
+
+</body>
+
+</html>

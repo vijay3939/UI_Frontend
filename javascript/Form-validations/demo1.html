@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form action="">
+
+        <label for="">UserName</label>
+        <input type="text" name="" id="name" onkeyup="Getuser()">
+
+        <p style="color: red; " id="para1">Enter Atleast 6 of Username</p> <br><br>
+
+        <label for="">Password</label>
+        <input type="text" name="" id="password" onkeyup="Getuser()">
+
+        <p style="color: red;" id="para2">Enter Atleast 12 of Username</p>
+
+        <button disabled> Enter</button>
+    </form>
+
+
+
+    <script>
+
+        function Getuser() {
+            var User = {
+                name: document.getElementById("name").value,
+                password: document.getElementById("password").value
+            }
+
+
+            if (User.name.length >= 6) {
+                document.getElementById("para1").style.display = "none"
+                document.querySelector("button").removeAttribute("disabled")
+            } else {
+                document.getElementById("para1").style.display = "block"
+                document.querySelector("button").setAttribute("disabled", true)
+            }
+
+
+
+            if (User.password.length >= 12) {
+                document.getElementById("para2").style.display = "none"
+                document.querySelector("button").removeAttribute("disabled")
+            } else {
+                document.getElementById("para2").style.display = "block"
+                document.querySelector("button").setAttribute("disabled", true)
+            }
+
+        }
+    </script>
+</body>
+
+</html>

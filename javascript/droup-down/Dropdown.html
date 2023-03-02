@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="state" onchange="getDistricts()">
+        <option value="" selected>Select State</option>
+    </select>
+
+    <ul>
+
+    </ul>
+    <script src="./Dropdown.js"></script>
+    <script>
+        var selectedState = {}
+
+        function displayAllStates() {
+            console.log(Indianstates);
+            Indianstates.forEach(details => {
+                var opt = document.createElement("option")
+                opt.setAttribute("value", JSON.stringify(details))
+                opt.innerHTML = details.state
+                document.querySelector("select").appendChild(opt)
+            });
+        }
+
+        function getDistricts() {
+            var state = document.getElementById("state").value
+            selectedState = JSON.parse(state)
+            displayDistricts()
+        }
+
+        function displayDistricts() {
+            document.querySelector("ul").innerHTML = ""
+            selectedState.districts.forEach((dist) => {
+                var myLi = document.createElement("li")
+                myLi.innerHTML = dist
+                document.querySelector("ul").appendChild(myLi)
+            })
+        }
+        displayAllStates()
+    </script>
+
+</body>
+
+</html>

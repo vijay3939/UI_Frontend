@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set interval</title>
+</head>
+
+<h1 id="first"></h1>
+<h1 id="second"></h1>
+
+<body>
+
+    <script>
+
+        function CallBackToBack() {
+            setInterval(function () {
+                // document.getElementById("first").innerHTML = "welcome to setinterval"
+                document.write('welcome to setinterval' + '<br>')
+            }, 1000)
+
+            if (setInterval > 5) {
+                clearInterval(CallBackToBack)
+            }
+
+        }
+        CallBackToBack()
+    </script>
+
+</body>
+
+</html>

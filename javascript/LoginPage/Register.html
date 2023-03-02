@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<style>
+    body{
+        text-align: center;
+    }
+
+    button{
+        color: wheat;
+        background-color: red;
+        padding: 5px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+
+    <h1>Register Email Account</h1>
+
+
+    <form action="">
+
+        <label for="">UserName</label>
+        <input type="text" id="user"><br><br>
+
+        <label for="">Password</label>
+        <input type="text" id="pass"><br><br>
+
+        <label for="">Email</label>
+        <input type="text" id="email"><br><br>
+
+        <label for="">Confirm Password</label>
+        <input type="text" id="con"><br><br>
+
+    </form>
+
+    <button type="button" onclick="getdata()">Submit</button>
+
+
+    <script>
+
+        var surya = JSON.parse(localStorage.getItem("surya"))
+        if (surya == null) {
+            surya = []
+        }
+
+        function getdata() {
+
+            var raju = {
+                user: "",
+                pass: "",
+                email: "",
+                con: ""
+            }
+
+            for (a in raju) {
+                raju[a] = document.getElementById(a).value
+            }
+            surya.push(raju)
+            localStorage.setItem("surya", JSON.stringify(surya))
+
+            window.location.href = "Login.html"
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

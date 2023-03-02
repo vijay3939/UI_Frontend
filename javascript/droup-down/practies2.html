@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practies2</title>
+</head>
+
+<body>
+
+    <body>
+
+        <select name="" id="state">
+            <option value=""> select State</option>
+
+            <ul>
+
+            </ul>
+
+        </select>
+
+        <script src="./practies2.js"></script>
+
+        <script>
+            var selectedstate = {}
+
+            function displayallStates() {
+                Indianstates.forech(details => {
+                    var opt = document.creatElement("option")
+                    opt.setAttribute("value", JSON.stringify(details))
+                    opt.innerHTML = details.state
+                    document.querySelector("select").appendChild(opt)
+
+                });
+
+            }
+
+
+            function getDistricts() {
+                var state = document.getElementById("state").value
+                selectedstate = JSON.parse(state)
+                displayDistricts()
+
+            }
+
+            function displayDistricts() {
+                document.querySelector("ul").innerHTML = ""
+                selectedstate.districts.forEach((dist) => {
+                    var myLi = document.createElement("li")
+                    myLi.innerHTML = dist
+                    document.querySelector("ul").appendChild(myLi)
+                })
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+    </body>
+
+</body>
+
+</html>

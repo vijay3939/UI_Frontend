@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+    body {
+        text-align: center;
+    }
+
+    button {
+        background-color: orange;
+    }
+</style>
+
+<body>
+
+
+    <form action="">
+
+        <label for="">UserName</label>
+        <input type="text" id="user"> <br><br>
+
+        <label for="">Password</label>
+        <input type="text" id="pass"> <br><br>
+
+
+    </form>
+
+    <button type="button" onclick="Come()">Login</button>
+
+    <p style="color: orange;display: none ;">Invalid username and password.. enter corrct password</p>
+
+    <script>
+
+        function Come() {
+            var mydel = {
+                user: "",
+                pass: ""
+            }
+            for (a in mydel) {
+                mydel[a] = document.getElementById(a).value
+            }
+
+            var surya = JSON.parse(localStorage.getItem("surya"))
+
+            let check = surya.find((so) => {
+                return so.user === mydel.user && so.pass === mydel.pass
+            })
+
+            if (check) {
+                window.location.href = "ha.html"
+            } else {
+                document.querySelector("p").style.display = "block"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

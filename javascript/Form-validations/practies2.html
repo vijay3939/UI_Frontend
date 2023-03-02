@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation 2</title>
+</head>
+
+<body>
+    <br><br>
+
+    <table>
+        <form action="">
+            <tr>
+                <td>
+                    <label for="">Student Name</label>
+                </td>
+                <td>
+                    <input type="text" id="StudentName" onkeyup="StdValidat()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color: blue;" id="studentError">Please enter full name of the student</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="">Father Name</label></td>
+                <td><input type="text" id="father" onkeyup="StdValidat()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color: blue;" id="fatherError">Please enter student's father name</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Email</label>
+                </td>
+                <td>
+                    <input type="text" id="email" onkeyup="StdValidat()">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <p style="color: blue;" id="emailError">Please Enter Valid Email</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Roall No</label>
+                </td>
+                <td>
+                    <input type="text" id="rollNo" onkeyup="StdValidat()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color: blue;" id="rollNoError">Please Enter Your Roll number</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">City</label>
+                </td>
+                <td>
+                    <input type="text" id="city" onkeyup="StdValidat()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color: blue;" id="cityError">Please Enter Your City</p>
+                </td>
+
+            </tr>
+
+        </form>
+    </table>
+
+    <button type="button" disabled>Click</button>
+
+
+    <script>
+        function StdValidat() {
+            var StudentName = document.getElementById('StudentName').value
+            var father = document.getElementById('father').value
+            var email = document.getElementById('email').value
+            var rollNo = document.getElementById('rollNo').value
+            var city = document.getElementById('city').value
+
+            if (StudentName.length >= 5) {
+                document.getElementById("studentError").style.display = "none"
+            } else {
+                document.getElementById("studentError").style.display = "block"
+            }
+
+
+            if (father.length >= 5) {
+                document.getElementById("fatherError").style.display = "none"
+            } else {
+                document.getElementById("fatherError").style.display = "block"
+            }
+
+            if (email.length >= 6) {
+                document.getElementById('emailError').style.display = 'none'
+            } else {
+                document.getElementById('emailError').style.display = 'block'
+            }
+
+            if (rollNo.length >= 3) {
+                document.getElementById("rollNoError").style.display = "none"
+            } else {
+                document.getElementById("rollNoError").style.display = "block"
+            }
+
+            if (city.length >= 5) {
+                document.getElementById("cityError").style.display = "none"
+            }
+            else {
+                document.getElementById("cityError").style.display = "block"
+            }
+
+
+            if (StudentName.length >= 5 && father.length >= 5 && email.length >= 6 && rollNo.length >= 3 && city.length >= 5 && city.length >= 5) {
+                document.querySelector("button").removeAttribute('disabled')
+            } else {
+                document.querySelector("button").setAttribute("disabled", true)
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
