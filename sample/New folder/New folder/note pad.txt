@@ -1,0 +1,155 @@
+
+<html>
+<head>
+<title>computer adda</title>
+</head>
+<body>
+</body>
+</html>
+----------------------------------------
+<html>
+<title>Vijay html</title>
+<body> 
+<h1>MS-OFFICE</H1>
+<h2>Since March 8, 1990, Woman’s Day is being observed by SAARC (South Asian Association for Regional Cooperation) consisting of seven countries, namely, India, Pakistan, Nepal, Bhutan, Bangladesh, Sri Lanka, and the Maldives. The day was marked to focus on the problems of girl children in these countries. It is a pity that girl children especially in underdeveloped countries are victims of extreme negligence and dishonour. 
+
+<p>The birth of a girl child is looked upon by the parents as a cause of pity.They are deprived of proper nutrition, education, economic facilities, and social status or honour.</p>
+
+Superstitions and social and religious prejudices give rise to such distressing conditions. We must root out these prejudices and ensure a bright future for the girl children by giving them proper education. Moreover, woman’s rights must be established in social and economic fields.
+</h2>
+
+</body>
+</html>
+--------------------------	
+
+css link path:-  <link rel="stylesheet" href="./just.css">
+-----------------
+
+Superstitions and social and religious prejudices give rise to such distressing conditions. We must root out these prejudices and ensure a bright future for the girl children by giving them proper education. 
+---------------
+
+ <div class="2">
+                <img src="" alt="">
+            </div>
+            
+            <div class="3">
+                <img src="" alt="">
+                
+            </div>
+
+            <div class="4">
+               <img src="" alt="">
+               
+            </div>
+
+
+----------------
+
+shot cuts:-
+
+button.btn .btn-primary*4>{$}    -
+
+ul>li*4>a{menu-$}  -
+
+
+-----------
+
+
+
+
+https://www.os-templates.com/free-basic-html5-templates/basic-87
+
+
+
+https://www.os-templates.com/free-basic-html5-templates/basic-86
+
+https://www.os-templates.com/free-basic-html5-templates/basic-72
+
+
+https://www.os-templates.com/free-basic-html5-templates/basic-78
+
+
+------------------
+
+CSS ADVANCED:-
+---------------------
+
+1. CSS Dimension
+2. CSS Cursors
+3. CSS Units
+4. Css Visibility
+5. Css Position     -1
+6. Css layers
+7. Css Media types
+8. Css sprites
+9. Css opacity
+10.Css Attribute Selectors
+11.Css Validation
+---------------
+
+Css3 features:-
+--------------
+
+1.css3 border
+2.css3 color
+3.css3 Gradients
+4.css3 text overflow
+5.css3 2d transforms
+6.css3 3d transforms
+7.css3 transitions
+8.css3 animations 
+9.css3 multi-colum layouts
+10.css3 flexbox
+11.css3 media queries 
+12.css3 miscellaneous
+------------------------
+
+
+----------
+
+5. Css Position     -1
+6. Css layers
+7. Css Media types
+
+
+css advance:-
+----------------
+
+
+1. 2d-3d   ====dout
+2. Animation   ====dout
+3. Animation   ====dout
+4. Animation   ====dout
+5. Borderimage   ====dout
+6. boxshodow   ====
+7. graphics   ====
+8. layout   ====
+9. loader   ====
+10. Roundborder image ====
+11. Searching  ====
+12. searching1  ====
+13. shadow  ====
+14. shadows  ====
+15. tooltip  ====
+16. toolTops  ====
+17. Transition  ====
+
+---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
