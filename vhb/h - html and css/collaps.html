@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h2>Collapse</h2>
+
+            <button data-bs-toggle="collapse" data-bs-target="#star" class="btn btn-danger">Clck here</button>
+
+            <div class="mt-4 collapse show fade" id="star">
+                <img src="./shopper3.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="second mt-5">
+
+            <button data-bs-toggle="collapse" data-bs-target="#q1" class="btn btn-secondary w-100">What is
+                Netflix?</button>
+
+            <div class="collapse fade bg-danger text-white p-2" id="q1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat cum rerum. Inventore
+                    ducimus sint voluptates eos laborum alias pariatur possimus similique eius. Cum delectus et vitae,
+                    modi voluptatem libero.</p>
+            </div>
+
+        </div>
+        <hr>
+
+        <br><br><br><br><br>
+
+
+        <div class="accordion" id="faqs">
+
+            <div class="accordion-item">
+
+                <div class="accordion-header">
+
+                    <button data-bs-toggle="collapse" data-bs-target="#q1" class="accordion-button">What is
+                        Netflix?</button>
+
+                </div>
+
+                <div class="accordion-collapse collapse" id="q1" data-bs-parent="#faqs">
+
+                    <div class="accordion-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, non?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, non?</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+
+                <div class="accordion-header">
+
+                    <button data-bs-toggle="collapse" data-bs-target="#q2" class="accordion-button">What is
+                        Netflix?</button>
+
+                </div>
+
+                <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faqs">
+
+                    <div class="accordion-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, non?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, non?</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>

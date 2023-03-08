@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closere</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // accessing variable of a function even its execution completes or out of its scope
+
+
+        // 1st method :- 
+
+        // function outer() {
+        //     var x = 10;
+
+
+        //     function inner() {
+        //         var y = 100;
+        //         console.log(x)
+        //     }
+
+        //     return inner
+        // }
+        // var res = outer()
+
+        // res()
+
+
+        // -------------------------------- 
+
+        // 2nd method :- 
+        
+
+        function outer(num1) {
+            var x = 10
+
+            function inner(num2) {
+                console.log(num1 + num2 + x)
+            }
+            return inner
+
+        }
+
+        var res = outer(7)
+
+        res(8)
+
+
+    </script>
+
+</body>
+
+</html>

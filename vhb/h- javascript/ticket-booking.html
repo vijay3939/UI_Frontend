@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        function BookClick() {
+
+            document.getElementById("Summarycontainer").style.display = 'block';
+            poster = document.getElementById('poster');
+            movieName = document.getElementById('litMovie').value;
+            if (movieName == "Avithar") {
+                poster.src = "./avatar.png";
+            } else {
+                poster.src = "./tom .png";
+            }
+
+            document.getElementById("lblName").innerHTML = movieName;
+            document.getElementById("lblCinema").innerHTML = document.getElementById("litCinima").value
+            document.getElementById("lblDate").innerHTML = document.getElementById("litDate").value
+            document.getElementById("lblTime").innerHTML = document.getElementById("litTime").value
+            document.getElementById("lblSeats").innerHTML = document.getElementById("litSeats").value
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="m-4 bg-dark p-3">
+
+            <div class="d-flex justify-content-between">
+
+                <div>
+                    <select id="litMovie" class="form-select">
+                        <option>Seclect Movie</option>
+                        <option>Avithar</option>
+                        <option>Tom and jerry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select id="litCinima" class="form-select">
+                        <option>Select Cinima</option>
+                        <option>PVR cinima</option>
+                        <option>Inox's Hill</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select id="litDate" class="form-select">
+                        <option>Select Date</option>
+                        <option>23,December,2022</option>
+                        <option>24,December,2022</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <select id="litTime" class="form-select">
+                        <option>Show Time</option>
+                        <option>6:40 p.m.</option>
+                        <option>10:45 p.m.</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select id="litSeats" class="form-select">
+                        <option value="">Select Sheet</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <button onclick="BookClick()" class="btn btn-danger">Book</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-4" id="Summarycontainer" style="display: none;">
+
+            <dl class="w-25">
+
+                <dt class="bg-dark  text-white p-2">Booking Summary</dt>
+
+                <dd class="m-2">
+
+                    <img id="poster" width="100%" height="160">
+
+                    <dl>
+                        <dt>Movie Name</dt>
+                        <dd id="lblName"></dd>
+
+                        <dt>Cinima</dt>
+                        <dd id="lblCinema"></dd>
+
+                        <dt>Date</dt>
+                        <dd id="lblDate"></dd>
+
+                        <dt>Time</dt>
+                        <dd id="lblTime"></dd>
+
+                        <dt>Seats</dt>
+                        <dd id="lblSeats" ></dd>
+
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

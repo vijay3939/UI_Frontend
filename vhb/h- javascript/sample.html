@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function PrintPage(){
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    
+
+    <h2>Click prin button to print page</h2>
+    <button onclick="PrintPage()">Print</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function CreateClick(){
+           folderName = prompt("Enter Folder Name","New_Folder");
+           if(folderName==""){
+              alert("Please Enter Folder Name");
+           } else if(folderName==null) {
+              alert("You canceled..");
+           } else {
+              document.querySelector("p").innerHTML += "Folder Created : " + folderName + "<br>";
+           }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="CreateClick()">Create Folder</button>
+    <p></p>
+</body>
+</html>

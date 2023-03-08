@@ -1,0 +1,77 @@
+                            HTML & CSS
+
+1. List various Browser Engines and show the parsing flow of HTML.
+
+Ans) - v8, spider monkey, gecko, chakra,
+
+     - browser engine parsing
+        marcup,tokens,chars, nodes, bytes, dom, layout, rending.
+------------------------------------------------------------------------------------------------------    
+
+2. What are the HTML Meta and CSS features required to make the page responsive?
+
+Ans)  1. view port - device screen
+      2. width     - divece width
+      3. scale     - 1 to 100% zoom 
+
+
+------------------------------------------------------------------------------------------------------
+
+3. Explain difference between GET and POST methods.
+
+
+Ans) Get:- it is used to fetch data from server.
+
+     Post:- it used to submit data to server
+------------------------------------------------------------------------------------------------------
+
+4. What is difference between <b> and <strong> element?
+
+Ans) Every documentation contains 2 phases
+       a. designing
+       b. review
+
+     *. In design mode to highligt any word or sentence you can use <b> and <i>
+     *. In review mode to highlight you have to use <strong> and <em>
+------------------------------------------------------------------------------------------------------
+
+5. Write pattern to validate password 4 to 15 characters with at least one uppercase letter, at least
+one number and special character.
+------------------------------------------------------------------------------------------------------
+
+6. What are structural pseudo selectors in CSS?
+
+Ans) nth-of-type, nth-child,nth-last-of-type(n),nth-of-type(n)
+------------------------------------------------------------------------------------------------------
+
+7. What are CSS Inheritance options explain them?
+------------------------------------------------------------------------------------------------------
+
+8. Explain difference between all positions in CSS?
+
+Ans) 1.Static
+     2.Relative 
+     3.Absolute
+     4.Fixed
+     5.Sticky
+------------------------------------------------------------------------------------------------------
+
+
+9. What is difference between display-none and visibility-hidden?
+
+Ans)   display-none:- display will remove element and its position form page.
+
+      visibility-hidden:- visibility-hidden will removve element but keeps its position of page
+------------------------------------------------------------------------------------------------------
+
+       
+10. Write the syntax for matrix2D ()?
+
+Ans) scalex(), skewx(), scaley(),tranlatex(),tranlatex()
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher order function</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Higer order function is a function that receives another function
+        // as argument or return another function or both 
+
+
+        
+        var arr = [56, 8, 7, 10, 11]
+
+        function square(num) {
+            return num * num
+
+        }
+
+        function cube(num) {
+            return num * num * num
+        }
+
+
+        function increment(num) {
+            return num + 1
+        }
+
+
+        function anyoperation(arr, operation) {
+            let result = []
+            for (ele of arr) {
+                let temp = operation(ele)
+                result.push(temp)
+            }
+
+            return result
+        }
+        console.log(arr)
+
+        let x = anyoperation(arr, increment)
+        console.log(x)
+
+        x = anyoperation(arr, square)
+        console.log(x)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

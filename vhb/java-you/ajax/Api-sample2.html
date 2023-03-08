@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .button {
+            background-color: red;
+            border: 2px solid red;
+            color: white;
+            padding: 10px;
+            display: block;
+            width: 200px;
+            font-size: 16px;
+            border-radius: 2px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="country">
+
+    <br><br>
+
+    <input type="text" class="button" id="special" value="Get Data">
+
+    <div id="data"> </div>
+
+    <script>
+
+        // API WEB SITE :- restcountries.com 
+
+
+        let btn = document.getElementById("special")
+
+        let dataele = document.getElementById("data")
+
+        let cname = document.getElementById("country")
+
+        btn.addEventListener('click', loadData)
+
+
+        function loadData() {
+
+            if (cname.value) {
+                let url = `https://restcountries.com/v3.1/name/${cname.value}`
+
+                let xhr = new XMLHttpRequest()
+                xhr.open('GET', url, true)
+                xhr.send()
+
+                xhr.onload = function () {
+
+                    if (xhr.status == 200) {
+                        let result = xhr.responseText
+                        result = JSON.parse(result)
+                        let [country] = result
+                        console.log(country)
+                        dataele.innerHTML = `<img src=${country.flags.png}>`
+
+                    }
+                    else
+                        dataele.innerHTML = "Invalid Request"
+
+                }
+                xhr.onprogress = function () {
+                    dataele.innerHTML = "gitting....."
+                }
+            }
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

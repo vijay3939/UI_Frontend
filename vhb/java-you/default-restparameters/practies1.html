@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <h1>Default parmeter</h1>
+
+    <script>
+        function product(num1 = 5, num2 = 1) {
+            console.log("num1 = ", num1, "num2 =", num2, num1, "*", num2, "=", num1 * num2)
+
+        }
+        product(8)
+    </script>
+     -->
+
+    <!-- <h1>Rest parmeter</h1> -->
+    <!-- 
+    <script>
+        function product(num1 = 5, num2 = 1, ...rest) {
+            
+            // console.log(rest)
+
+            var result = num1 * num2;
+
+            for (num of rest) {
+                result = result * num
+            }
+            console.log(result)
+
+        }
+        product(7,8,2,9,10)
+
+    </script> -->
+
+
+
+    <!-- <h1>arguments</h1> -->
+
+    <script>
+        function product(num1 = 5, num2 = 1, ...rest) {
+
+            console.log(arguments)
+            // console.log(arguments[3])
+
+        }
+        product(1,2,3,4,5)
+
+    </script> 
+
+</body>
+
+</html>

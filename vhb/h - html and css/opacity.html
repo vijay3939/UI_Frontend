@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+          body{
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            height: 500px;
+           
+          }
+
+          h1{
+
+            animation-name: text;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+
+          @keyframes text{
+
+            0%{
+                font-size: 5px;
+            }
+            100%{ 
+                font-size: 100px;
+            }
+         }
+
+         img{
+            animation-name: img;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+         }
+
+         @keyframes img{
+            0%{
+                transform: rotate(360deg);
+                margin-left: 120%;
+                width: 10px;
+                height: 10px;
+                opacity: 0.5;
+                
+            }
+            50%{
+                transform: rotate(180deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+            }
+         }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Happy New Year</h1>
+    <img src="./new year.jpg" alt="">
+    
+</body>
+</html>

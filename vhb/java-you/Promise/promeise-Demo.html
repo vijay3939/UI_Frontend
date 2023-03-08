@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+  
+</head>
+
+<body>
+
+    <!-- 1.Promises is an object
+
+          let p = new promise()
+
+    2.promise object takes a callback function
+
+         let = new promise(function(){})
+
+    3. This object returns some data either success data or error information.
+
+          let p = new promise (function(resolve,reject)){
+
+    } -->
+    <!-- ------------------------------------------------------  -->
+
+
+    <script>
+
+
+        let p = new Promise(
+
+            function (success, error) {
+
+                let datacame = true
+                if (datacame) {
+                    success([1, 2, 3])
+                }
+                else
+                    error("promeses not done")
+
+            }
+
+        )
+
+        console.log(p)
+
+        p.then(function (data) {
+            console.log(data)
+        })
+
+
+        p.catch(function (errordata) {
+            console.log(errordata)
+        })
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

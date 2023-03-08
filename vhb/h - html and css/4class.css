@@ -1,0 +1,174 @@
+
+.container{
+    background-color: lightgray;
+    height: 1000px;
+    
+}
+
+.total {
+    margin-top: 88px;
+}
+
+.fashinos {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 1360px;
+    padding: 1px;
+    margin: auto;
+    box-shadow: -11px 17px 21px red;
+    font-family: cursive;
+    margin-top: -34px;
+}
+
+.FIRST {
+    margin-left: -73px;
+    margin-top: 52px;
+}
+
+.kids {
+    height: 192px;
+    border: 1px solid;
+    background-color: blueviolet;
+    width: 153px;
+    margin-left: 291px;
+    margin-top: 9px;
+    padding: 4px;
+    box-shadow: 11px 5px 27px yellow;
+}
+
+img.img1 {
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+}
+
+h3 {
+    border: 2px solid;
+    text-align: center;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+}
+/* .men {
+    height: 192px;
+    border: 1px solid;
+    background-color: blueviolet;
+    width: 153px;
+    margin-left: 291px;
+    margin-top: 9px;
+    padding: 4px;
+} */
+
+img.img2 {
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+}
+
+h3 {
+    border: 2px solid;
+    text-align: center;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+}
+/* .women {
+    height: 192px;
+    border: 1px solid;
+    background-color: blueviolet;
+    width: 153px;
+    margin-left: 291px;
+    margin-top: 9px;
+    padding: 4px;
+} */
+
+img.img3 {
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+}
+
+h3 {
+    border: 2px solid;
+    text-align: center;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+}
+.SECOND {
+    width: 1000px;
+    height: 294px;
+    margin-left: 422px;
+    margin-top: -638px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding: 9px;
+}
+
+img.kids1 {
+    box-shadow: 15px 13px 15px blue;
+    height: 430px;
+    width: 261px;
+    border: 2px solid;
+    margin: 35px;
+    margin-left: -8px;
+}
+
+
+/* img.kids1 {
+    height: 430px;
+    width: 261px;
+    border: 2px solid;
+}
+img.kids2 {
+    height: 430px;
+    width: 261px;
+    border: 2px solid;
+    
+}
+img.kids3 {
+    height: 430px;
+    width: 261px;
+    border: 2px solid;
+} */
+
+.KIDS {
+    text-align: center;
+    font-size: 10px;
+}
+.THREE {
+    border: 3px solid red;
+    width: 1000px;
+    /* height: 294px; */
+    margin-left: 599px;
+    margin-top: 14px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 9px;
+}
+
+img.men1 {
+    height: 206px;
+    width: 261px;
+    border: 1px solid;
+}
+img.men2 {
+    height: 206px;
+    width: 261px;
+    border: 2px solid;
+}
+img.men3 {
+    height: 206px;
+    width: 261px;
+    border: 2px solid;
+}
+
+.MEN {
+    text-align: center;
+    font-size: 10px;
+}

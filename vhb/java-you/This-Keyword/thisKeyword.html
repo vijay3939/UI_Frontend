@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+
+<body>
+
+
+    <!-- <p>
+        1. value of this keyword outside a function/object 
+        2. value of this keyword inside a regular function. 
+        3. value of this keyword inside a method.
+        4. value of this keyword inside event hanter
+        5. value of this keyword inside a function in sticl method
+    </p> -->
+
+
+
+    <!-- 4. <input type="button" value="click" onclick="this.style.background='red';this.style.color='white'"> -->
+    <!-- <input type="button" value="click" id="btn"> -->
+
+    <script>
+
+        // 1. value of this keyword outside a function/object 
+
+        // var a = 10
+        // console.log(this)
+        // function add() {
+
+        // }
+
+        // console.log(window.a)
+        // console.log(a)
+        // console.log(this.a)
+        // // ------------------------------
+
+
+        // var ab = {
+        //     name: "xyz"
+        // }
+        // console.log(this.ab)
+        // console.log(ab)
+
+        // -----------------------------------------------------------------------
+
+        // 2. value of this keyword inside a regular function.
+
+
+        // var a = 10
+
+        // function add() {
+        //     console.log(this.a)
+        // }
+        // add()
+
+        // -----------------------------------------------------------------------
+
+        // 3. value of this keyword inside a method.
+
+        // var movie = {
+        //     name: "RRR",
+        //     getName: function () {
+        //         console.log(this)
+        //     }
+        // }
+        // movie.getName()
+
+
+        // -----------------------------------------------------------------------
+
+        // 4. value of this keyword inside event hanter
+
+
+        // document.getElementById("btn").onclick = function () {
+        //     console.log(this)
+        // }
+
+        // -----------------------------------------------------------------------
+
+
+        // 5. value of this keyword inside a function in sticl method
+
+
+        "use strict"
+
+        function test() {
+            console.log(this)
+        }
+        test()
+
+        x = 10;
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

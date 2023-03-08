@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #special {
+            color: pink
+        }
+
+        .one {
+            background-color: blue;
+        }
+
+        .two {
+            border: 5px solid green;
+        }
+        .three{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="special" class="one">
+        This division one
+    </div>
+
+    <!-- <img src="./nature.jpg" alt="" id="img1"> -->
+
+    <!-- Name: <input type="text" id="fn"> -->
+
+    <!-- <script> 
+    // how to creat in styly in javascript 
+
+        var x = document.getElementById("special")
+        x.style.color = "pink"
+        x.style.border = "3px solid black"
+        console.log(x.style)
+
+    </script> -->
+
+    <!-- ----------------------------------------  -->
+
+    <!-- <script>
+    //    how to creat in class and id , in javascript 
+     
+        var x = document.getElementById("special")
+
+        console.log(x.getAttribute('class'))
+        x.setAttribute('class', 'one')
+        console.log(x.getAttribute('class'))
+
+        
+    </script> -->
+    <!-- ----------------------------------------  -->
+
+    <!-- <script>
+        // how to creat in image ,width and height in javascript 
+
+
+        var x = document.getElementById("img1")
+
+        x.style.width = "200px"
+        x.style.height = "200px"
+        // console.log(x.getAttribute("src"))
+
+        x.setAttribute('src', 'cack.jpg')
+        
+    </script> -->
+
+    <!-- ----------------------------------------  -->
+
+    <!-- <script>
+
+        // how to creat set/get -method
+
+        var x = document.getElementById("fn")
+
+        console.log(x.getAttribute('value'))
+
+        x.setAttribute('value', 'xyz')
+
+
+    </script> -->
+
+    <!-- ----------------------------------------  -->
+
+
+    <script>
+        // how to cereat multipul calss 
+
+        var x = document.getElementById("special")
+
+        // x.setAttribute('class','two')
+
+        x.classList.add('two')
+
+        console.log(x.classList)
+       
+        x.classList.add('three')
+
+        // reomove 
+        x.classList.remove('one')
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript">
+        function bodyload() {
+            fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY&quot;)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    for (var item of data.photos) {
+                        var tr = document.createElement("tr");
+                        var tdId = document.createElement("td");
+                        var tdPreview = document.createElement("td");
+                        var tdCamera = document.createElement("td");
+                        var tdRover = document.createElement("td");
+
+                        tdId.innerHTML = item.id;
+                        tdPreview.innerHTML = `<a href=${item.img_src} target="_blank"><img src=${item.img_src} width="100" height="100"></a>`;
+                        tdCamera.innerHTML = item.camera.full_name;
+                        tdRover.innerHTML = item.rover.name;
+
+                        tr.appendChild(tdId);
+                        tr.appendChild(tdPreview);
+                        tr.appendChild(tdCamera);
+                        tr.appendChild(tdRover);
+
+                        document.querySelector("tbody").appendChild(tr);
+                    }
+                })
+        }
+    </script>
+</head>
+
+<body class="container-fluid" onload="bodyload()">
+    <h2>Mars Rover Photos</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Photo Id</th>
+                <th>Preview</th>
+                <th>Camera Name</th>
+                <th>Rover Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

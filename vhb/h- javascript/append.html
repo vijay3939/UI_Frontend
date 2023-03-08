@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script type="text/javascript">
+
+        function Addclick(){
+
+            var image = document.createElement("img");
+            image.src = "../Laptops.jpg";
+            image.height = "180";
+            image.width = "180";
+            image.border= '2';
+
+            document.getElementById("container").appendChild(image);
+        }
+
+    </script> -->
+
+    <script type="text/javascript">
+
+        var Categories = ["All", "Electironics", "Footwere", "Fshion"];
+        // var categories = ["All", "Electronics", "Footwear", "Fashion"];
+
+        function bodyload() {
+            for (var item of Categories) {
+                var li = document.createElement("li");
+                li.innerHTML = item;
+                document.querySelector("ol").appendChild(li);
+            }
+
+
+            var option = document.createElement("option")
+            option.text = item;
+            option.value = item;
+            document.querySelector("select").appendChild(option);
+
+            var div = document.createElement("div");
+
+            var anchor = document.createElement("a");
+            anchor.href = "#";
+            anchor.innerHTML = item;
+            div.appendChild(anchor);
+            document.querySelector("nav").appendChild(div);
+
+
+            var ulLi = document.createElement("li");
+            ulLi.innerHTML = `
+                <input type='checkbox' value = ${item}>${item}
+                `;
+            document.querySelector('ul').appendChild(ulLi);
+
+
+            var tr = document.createElement("tr");
+            var td = document.createElement("td");
+            td.innerHTML = item;
+            tr.appendChild(td);
+            document.querySelector("tbody").appendChild(tr);
+
+
+        }
+
+
+    </script>
+</head>
+
+<body onload="bodyload()">
+
+    <!-- <button onclick="Addclick()">Add Click</button>
+    <div id="container"></div> -->
+
+    <h3>
+        <Table></Table>
+    </h3>
+    <table width="300" border="1">
+
+        <thead>
+            <tr>
+                <th>Catagirou</th>
+            </tr>
+        </thead>
+
+    </table>
+
+    <tbody>
+
+    </tbody>
+
+    <h3>Checkbox List</h3>
+    <ul>
+
+    </ul>
+
+
+    <h3>Categories List</h3>
+
+    <ol>
+
+    </ol>
+
+    <h3>Select Categories</h3>
+
+    <select>
+
+    </select>
+
+    <h3>Navbar</h3>
+
+    <nav>
+
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+</head>
+
+<style>
+    div {
+        text-align: center;
+    }
+
+    button {
+        height: 40px;
+        border: none;
+        outline: none;
+        width: 180px;
+    }
+</style>
+
+<body>
+
+    <div>
+        <h1>This is main window</h1>
+
+        <button onclick="openNewWindow()">
+            open a window
+        </button>
+
+        <br>
+        <br>
+
+        <button onclick="closeNewWindow()">
+            close a window
+        </button>
+
+    </div>
+
+
+    <script>
+
+        var ref;
+
+        function openNewWindow() {
+            ref = window.open("https://www.instagram.com/accounts/login/", "_blank", "width=800px,height=500px,left=100px,top=200px")
+        }
+
+        function closeNewWindow() {
+            ref.close()
+        }
+
+    </script>
+
+</body>
+
+</html>

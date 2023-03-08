@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean and match</title>
+
+    <script type="text/javascript">
+        var tip = "";
+        var pattern = / /;
+
+        function CountyChange() {
+            var country = document.getElementById("Country").value;
+            var flag = document.getElementById("flag");
+            var Mobile = document.getElementById("Mobile");
+
+            if (country == "india") {
+                flag.src = "../india.png";
+
+            } else if (country == "us") {
+                flag.src == "../flot";
+
+            } else if (country == "uk") {
+                flag.src == "../u.k.png";
+            } else {
+                flag.src = "";
+            }
+        }
+
+        function Submitclick() {
+            var Mobile = document.getElementById("Mobile").value;
+            var msg = document.getElementById("msg");
+            if (Mobile.match(pattern)) {
+                document.write(`verified successfully.. OTP sent to ${Mobile}`);
+            } else {
+                msg.innerHTML = `Invalid Mobile :${tip}`.fontcolor("blue");
+            }
+        }
+
+
+
+    </script>
+</head>
+<style>
+    #flag {
+        position: absolute;
+        left: 50px;
+        top: 200px;
+    }
+</style>
+
+<body>
+
+
+    <fieldset>
+        <legend>Verify Mobile</legend>
+        <dl>
+            <dt>Seclect Your Country <img id="flag" width="80" height="50"></dt>
+            <dd>
+                <select name="" id="Country" onchange="CountyChange()">
+                    <option>Seclect country</option>
+                    <option>India</option>
+                    <option>us</option>
+                    <option>uk</option>
+                </select>
+
+            </dd>
+            <dt>Mobile</dt>
+            <dd><input type="text" id="Mobile"></dd>
+
+        </dl>
+        <button onclick="Submitclick()">Submit</button>
+
+    </fieldset>
+
+    <h1 alig="center" id="msg"></h1>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+Q1:   Explain the three main ways to apply CSS styles to a web page  
+    
+Q2:   What is CSS?  
+    
+Q3:   How to use variables in Sass?  
+    
+Q4:   Explain CSS sprites, and how you would implement them on a page or site  
+    
+Q5:   Explain the CSS box model and the layout components that it consists of  
+    
+Q6:   What is a CSS rule?  
+    
+Q7:   Explain what is a @extend directive used for in Sass?  
+    
+Q8:   Have you played around with the new CSS Flexbox or Grid specs?  
+    
+Q9:   What is DOM (Document Object Model) and how is it linked to CSS?  
+    
+Q10:   What is Sass?  
+    
+Q11:   What existing CSS frameworks have you used locally, or in production? How would you change/improve them?  
+    
+Q12:   Describe floats and how they work  
+    
+Q13:   What Selector Nesting in Sass is used for?  
+    
+Q14:   List out the key features for Sass  
+    
+Q15:   What is the difference between classes and IDs in CSS?  
+    
+Q16:   List out the data types that Sass supports  
+    
+Q17:   What's the difference between SCSS and Sass?  
+    
+Q18:   Explain the usage of table-layout property  
+    
+Q19:   What's the difference between a relative, fixed, absolute and statically positioned element?  
+    
+Q20:   Have you ever worked with retina graphics? If so, when and what techniques did you use?  
+    
+Q21:   What are the advantages/disadvantages of using CSS preprocessors?  
+    
+Q22:   How is responsive design different from adaptive design?  
+    
+Q23:   What is CSS selectors? Name some.  
+    
+Q24:   What does Accessibility (a11y) mean?  
+    
+Q25:   What is CSS preprocessor and why to user one?  
+    
+Q26:   How would you approach fixing browser-specific styling issues?  
+    
+Q27:   What’s the difference between resetting and normalizing CSS? Which would you choose, and why?  
+    
+Q28:   Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.  
+    
+Q29:   Describe pseudo-elements and discuss what they are used for  
+    
+Q30:   How does CSS actually work (under the hood of browser)?  
+    
+Q31:   What is a Grid System in CSS?  
+    
+Q32:   Explain the purpose of clearing floats in CSS  
+ 
+Q33:   What does * { box-sizing: border-box; } do? What are its advantages?  
+ 
+Q34:   Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?  
+ 
+Q35:   Explain the basic rules of CSS Specificity  
+ 
+Q36:   How do you optimize your webpages for print?  
+ 
+Q37:   Have you ever used a grid system, and if so, what do you prefer?  
+ 
+Q38:   What are the different ways to visually hide content (and make it available only for screen readers)?  
+ 
+Q39:   Describe z-index and how a stacking context is formed  
+ 
+Q40:   Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?  

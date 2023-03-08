@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+
+<body>
+
+    <!-- first vidoes -->
+
+    <!-- <script>
+
+
+        async function json() {
+
+            let data = await fetch("test.json");
+
+            console.log(data)
+
+
+            data = await data.json()
+
+            console.log(data)
+        }
+        let s = [
+            {
+                "name": "realme 5 pro",
+                "price": { "4gb": 14000, "6gb": 16000 }
+            },
+            {
+                "name": "realme 7 pro",
+                "price": { "4gb": 16000, "6gb": 18000 }
+            }
+        ]
+
+        console.log(s)
+
+        console.log(JSON.stringify(s)
+        )
+
+
+    </script> -->
+
+    <!-- --------------------------------------------  -->
+
+    <!-- <script>
+        // json and javascrip - difference 
+
+        let address = {
+
+            city: "hyderabad",
+            state: "TS",
+            getStateName: function () {
+
+                console.log(this.state)
+            }
+        }
+    </script> -->
+
+    <!-- --------------------------------------------  -->
+
+    <script>
+
+        // JSON.parse and JSON.stringify - difference 
+
+
+        mobile = {
+            name: "vivo yt8",
+            price: 30000,
+            ram: "8gb",
+            storage: "64gb"
+        }
+
+        // stringify 
+
+        let nmobile = JSON.stringify(mobile)
+        console.log(nmobile)
+
+        // --------------------------------------- 
+
+        // parse
+
+        pmobile = JSON.parse(nmobile);
+        console.log(pmobile)
+
+    </script>
+
+
+</body>
+
+</html>
