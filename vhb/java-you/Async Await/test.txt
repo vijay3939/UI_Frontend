@@ -1,0 +1,2 @@
+This is demo for AJAX calls.
+AJAX means asnchronous javascript and xml
