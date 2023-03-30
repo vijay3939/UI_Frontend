@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Mydata {
+            constructor(id, name, username, email, address, street, suite, city, zipcode, geo, lat, lng, phone, website, company, name1, catchPhrase, bs) {
+                this.id = id;
+                this.name = name;
+                this.username = username;
+                this.email = email;
+                this.address = address;
+                this.street = street;
+                this.suite = suite;
+                this.city = city;
+                this.zipcode = zipcode;
+                this.geo = geo;
+                this.lat = lat;
+                this.lng = lng;
+                this.phone = phone;
+                this.website = website;
+                this.company = company;
+                this.name1 = name1;
+                this.catchPhrase = catchPhrase;
+                this.bs = bs;
+
+            }
+            method() {
+                return this.id + "  " + this.name + " " + this.username + " " + this.email + " " + this.address + " " + this.street + " " + this.suite + " " + this.city + " " + this.zipcode + " " + this.geo + " " + this.lat + " " + this.lng + " " + this.phone + " " + this.website + " " + this.company + " " + this.name1 + " " + this.catchPhrase + " " + this.bs + " "
+            }
+        }
+
+        const info = new Mydata("1,", "Leanne Graham", "Bret", "Sincere@april.biz", "{", "Kulas Light", "Apt. 556", "Gwenborough", "92998-3874", "{", "-37.3159", "81.1496", "1-770-736-8031 x56442", "hildegard.org", "{", "Romaguera-Crona", "Multi-layered client-server neural-net", "harness real-time e-markets")
+
+        console.log("info",info)
+    </script>
+</body>
+
+</html>

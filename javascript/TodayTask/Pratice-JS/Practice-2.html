@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="change()">Delect</button>
+    <ul>
+        <li>Movies</li>
+        <li>Songs</li>
+        <li>Comedy</li>
+        <li>Reading</li>
+        <li>Watching</li>
+        <li>Playing</li>
+        <li>Writting</li>
+        <li>Singing</li>
+        <li>Driving</li>
+        <li>Walking</li>
+        <li>Runing</li>        
+    </ul>
+
+    <!-- <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+    </ul> -->
+    <script>
+        document.querySelector("ul").onclick=function (e){
+            var parentNode = e.target.parentNode
+            parentNode.removeChild(e.target)
+        }
+    </script>
+</body>
+</html>

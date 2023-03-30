@@ -72,7 +72,7 @@
                 }
             }
 
-            postUser.open('post', 'http://localhost:3000/content')
+            postUser.open('post', 'http://localhost:3000')
             postUser.onreadystatechange("Content-Type", "application/json")
             postUser.send(JSON.stringify(myUser))
         }
@@ -86,7 +86,7 @@
 
                 }
             }
-            var url = "http://localhost:3000/content";
+            var url = "http://localhost:3000";
             Reading.open("Get", url)
             Reading.send()
 
@@ -142,7 +142,7 @@
 
                 }
             }
-            postUser.open("Delete", 'http://localhost:3000/content/' + Demo[i].id)
+            postUser.open("Delete", 'http://localhost:3000/' + Demo[i].id)
             postUser.send()
         }
 
@@ -166,7 +166,7 @@
                     document.getElementById("up").style.display = "none"
                 }
             }
-            postUser.open('Put', "http://localhost:3000/content/" + myUser.id)
+            postUser.open('Put', "http://localhost:3000/" + myUser.id)
             postUser.setRequestHeader("Content-Type", "application/json")
             postUser.send(JSON.stringify(myUser))
 

@@ -76,13 +76,13 @@
                 }
             }
 
-            postUser.open("post", "http://localhost:3000/object");
+            postUser.open("post", " http://localhost:3000/object");
             postUser.setRequestHeader("Content-type", "application/json")
             postUser.send(JSON.stringify(user))
 
         }
 
-        
+
 
 
         function displaymyinfo() {
@@ -93,7 +93,7 @@
                     managetable(info)
                 }
             }
-            var url = "http://localhost:3000/object"
+            var url = " http://localhost:3000/object"
             data.open("GET", url)
             data.send()
         }
@@ -138,13 +138,13 @@
             }
             // document.getElementById("add").style.display = "none"
             // document.getElementbyId("up").style.display = "block"
-            document.getElementById("add").style.display ="none"
-            document.getElementById("up").style.display ="block"
+            document.getElementById("add").style.display = "none"
+            document.getElementById("up").style.display = "block"
 
         }
 
         function deleteUser(i) {
-            console.log('index number',i)
+            console.log('index number', i)
             var postUser = new XMLHttpRequest()
             postUser.onreadystatechange = function () {
                 if (postUser.status == 200 && postUser.readyState == 4) {
@@ -152,7 +152,7 @@
                 }
 
             }
-            postUser.open("Delete", "http://localhost:3000/object/" + info[i].id);
+            postUser.open("Delete", " http://localhost:3000/object/" + info[i].id);
             postUser.send()
 
         }
@@ -179,10 +179,12 @@
                 }
             }
 
-            postUser.open("put", "http://localhost:3000/object/" + user.id);
+            postUser.open("put", " http://localhost:3000/object/" + user.id);
             postUser.setRequestHeader("content-Type", "application/json")
             postUser.send(JSON.stringify(user))
         }
+
+
 
 
 

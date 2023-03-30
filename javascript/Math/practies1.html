@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="play()">Play</button>
+    <img src="" alt="" style="width: 300px;">
+    <script>
+        function play() {
+            // var randomNumber = Math.random()*1000000
+            var randomNumber = Math.random() * 10
+            var roundNumber = Math.round(randomNumber);
+
+            console.log(randomNumber)
+
+            console.log("Floor Value : - ", Math.floor(randomNumber))
+            console.log("Ceil Value : - ", Math.ceil(randomNumber))
+            console.log("Round Value : - ", Math.round(randomNumber))
+            // console.log(roundNumber)
+            // if(roundNumber == 0){
+            //     document.querySelector("img").setAttribute("src","./head.jpg")
+            // }else{
+            //     document.querySelector("img").setAttribute("src","./tail.jpg")
+            // }
+        }
+    </script>
+
+
+    for Example :
+    <script>
+        var randomNumber = Math.random();
+        var roundNumber = Math.round(randomNumber)
+        console.log(roundNumber)
+    </script>
+</body>
+
+</html>

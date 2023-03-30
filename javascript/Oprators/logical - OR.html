@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="stateName-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OR</title>
+</head>
+
+<body>
+
+    <h2></h2>
+
+
+    <script>
+
+        var stateName = prompt("Enter state name")
+
+        if (stateName == "Andhra" || stateName == "Telangana") {
+            document.querySelector("h2").innerHTML = "HELLO YALA UNNARU ANDHARU"
+        }
+        else if (stateName == "Tamil" || stateName == "kerala") {
+            document.querySelector("h2").innerHTML = "helo yappadi irrukiraga"
+        }
+        else if (stateName == "MP" || stateName == "UP") {
+            document.querySelector("h2").innerHTML = "Salam malekum bai"
+        }
+        else {
+            document.querySelector("h2").innerHTML = "Enter Correct State Name"
+        }
+
+
+    </script>
+
+</body>
+
+</html>

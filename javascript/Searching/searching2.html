@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pracites 2</title>
+</head>
+
+<body>
+
+
+    <input type="text" value="" id="imp" onkeyup="getdata()">
+
+    <div id="show"></div>
+
+    <script src="searching2.js"></script>
+
+    <script>
+
+        var object = {}
+
+        function getdata() {
+
+            var surya = document.getElementById("imp").value
+
+            object = dbData.find(function (sur) {
+                return sur.name == surya
+            })
+            displaydata()
+        }
+
+
+        function displaydata() {
+
+            if (object) {
+                var info = ""
+                for (a in object) {
+                    info = info + object[a] + "<br>"
+                }
+                document.getElementById("show").innerHTML = info
+            }
+            else {
+                document.getElementById("sun").innerHTML = ""
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

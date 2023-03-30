@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        /* background-color: black; */
+        /* color: white; */
+        border: 2px solid;
+        padding: 4px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <script>
+        class Userdata {
+            constructor(id, name, username, email) {
+                this.id = id;
+                this.name = name;
+                this.username = username;
+                this.email = email;
+            }
+            add() {
+                return 'user informations {' + "<br>" +
+                    'id :' + this.id + " <br>  " +
+                    'name :' + this.name + "<br> " +
+                    'username :' + this.username + "<br> " +
+                    'email :' + this.email + "<br> " +
+                    ' }, ' + "<br> <br>"
+            }
+        }
+
+        class Address extends Userdata {
+            constructor(id, name, username, email, street, suite, city, zipcode, geo, lat, lng, phone, website) {
+                super(id, name, username, email)
+                this.street = street;
+                this.suite = suite;
+                this.city = city;
+                this.zipcode = zipcode;
+                this.geo = geo;
+                this.lat = lat;
+                this.lng = lng;
+                this.phone = phone;
+                this.website = website;
+            }
+            addplus() {
+
+                return this.add() + " " + 'address informations { ' + "<br>" +
+                    'street : ' + this.street + "<br> " +
+                    'suite : ' + this.suite + "<br> " +
+                    'city : ' + this.city + "<br> " +
+                    'zipcode : ' + this.zipcode + "<br> " +
+                    'geo : ' + this.geo + "<br> " +
+                    'lat : ' + this.lat + "<br> " +
+                    'lng : ' + this.lng + "<br> " +
+                    'phone : ' + this.phone + "<br> " +
+                    'website : ' + this.website + " <br>" +
+                    ' }, ' + "<br> <br>"
+            }
+        }
+
+        class Company extends Address {
+            constructor(id, name, username, email, street, suite, city, zipcode, geo, lat, lng, phone, website, name1, catchPhrase, bs) {
+                super(id, name, username, email, street, suite, city, zipcode, geo, lat, lng, phone, website)
+                this.name1 = name1;
+                this.catchPhrase = catchPhrase;
+                this.bs = bs;
+            }
+            addanotherplus() {
+                return this.addplus() + " " + 'company infomations { ' + "<br>" +
+                    'Companyname :' + this.name1 + "<br> " +
+                    'catchPhrase : ' + this.catchPhrase + "<br>" +
+                    'bs : ' + this.bs + "<br> " +
+                    ' } ' + "<br> <br>"
+            }
+        }
+
+
+        const user = new Company("1,", "Leanne Graham", "Bret", "Sincere@april.biz", "Kulas Light", "Apt. 556", "Gwenborough", "92998-3874", "geo", "-37.3159", "81.1496", "1-770-736-8031 x56442", "hildegard.org", "Romaguera-Crona", "Multi-layered client-server neural-net", "harness real-time e-markets")
+
+        document.write(user.addanotherplus())
+    </script>
+</body>
+
+</html>

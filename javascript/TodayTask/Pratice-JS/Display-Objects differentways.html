@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="Display"></div>
+
+ <script>
+    var people ={
+          fname:"Indian Citizen" ,
+          fname1:"pakisthan Citizen" ,
+          fname2:"American Citizen",
+          fname3:"Europeon Citizen",
+          fname4:"austrlain Citizen",
+          fname5:"Japanies Citizen"
+        }
+        
+
+    var different={ }
+        different.state1="Andhra Pradesh"
+        different.state2="Telengana"
+        different.state3="Karnataka"
+        different.state4="kerala"
+        different.state5="tamil nadu"
+        different.state6="Maha rastra"
+
+
+
+ var family={ }
+        family['name1']="Sruthi",
+        family['name2']="vishal",
+        family['name3']="selvi akka",
+        family['name4']="Raghu mama"
+
+    //   Way -1
+        document.write("Citizens :" +people.fname+"<br>"
+                      +"Citizens :"+people.fname1+"<br>"
+                      +"Citizens :"+people.fname2+"<br>"
+                      +"Citizens :"+people.fname3+"<br>"
+                      +"Citizens :"+people.fname4+"<br>"
+                      +"Citizens :"+people.fname5+"<br>")
+
+       document.write("Diffent States :" +different.state1+"<br>"
+                      +"Diffent States :"+different.state2+"<br>"
+                      +"Diffent States :"+different.state3+"<br>"
+                      +"Diffent States :"+different.state4+"<br>"
+                      +"Diffent States :"+different.state5+"<br>"
+                      +"Diffent States :"+different.state6+"<br>")
+
+       document.write("MyFamily "+"<br>"+" : "+family.name1+"<br>"
+                      +"        : "+family.name2+"<br>"
+                      +"        : "+family.name3+"<br>"
+                      +"        : "+family.name4+"<br>")
+
+
+    //   Way -2
+       document.getElementById("Display").innerHTML="Diffent States :" +different.state1+"<br>"
+                                                   +"Diffent States :"+different.state2+"<br>"
+                                                   +"Diffent States :"+different.state3+"<br>"
+                                                   +"Diffent States :"+different.state4+"<br>"
+                                                   +"Diffent States :"+different.state5+"<br>"
+                                                   +"Diffent States :"+different.state6+"<br>"
+
+
+
+    //   Way -3
+         for ( a in family){
+             document.write(a+": "+family[a]+"<br>")
+         }    
+
+         for (a in different){
+             document.write(a+" : "+different[a]+"<br>")
+         }  
+
+         for (a in  people){
+             document.write(a+" : "+people[a]+"<br>")
+         }                            
+    </script>
+</body>
+</html>

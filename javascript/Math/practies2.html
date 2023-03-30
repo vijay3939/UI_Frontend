@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practies 2</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="getdata()">Click here</button>
+
+    <img style="width: 200px; height: 200px;" src="" alt="">
+
+    <script>
+
+        function getdata() {
+
+            var RupeCoin = Math.random()
+
+            var RupeCoin = Math.round(RupeCoin);
+
+           
+            console.log("Floor Value : - ", Math.floor(RupeCoin) + "<br>")
+            
+            console.log("ceil Value : - ", Math.ceil(RupeCoin) + "<br>")
+            
+            console.log("round Value : - ", Math.round(RupeCoin) + "<br>")
+
+
+
+            if (RupeCoin == 0) {
+                document.querySelector("img").setAttribute("src", "head.jpg")
+            } else {
+                document.querySelector("img").setAttribute("src", "tail.jpg")
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

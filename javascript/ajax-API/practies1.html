@@ -140,7 +140,7 @@
                     }
                 }
 
-                postUser.open("post", "http://localhost:3000/object");
+                postUser.open("post", "http://localhost:3000/");
                 postUser.setRequestHeader("Content-type", "application/json")
                 postUser.send(JSON.stringify(user))
 
@@ -155,7 +155,7 @@
                         managetable(info)
                     }
                 }
-                var url = "http://localhost:3000/object"
+                var url = "http://localhost:3000"
                 data.open("GET", url)
                 data.send()
             }
@@ -218,7 +218,7 @@
                     }
 
                 }
-                postUser.open("Delete", "http://localhost:3000/object/" + info[i].id);
+                postUser.open("Delete", "http://localhost:3000/" + info[i].id);
                 postUser.send()
 
             }
@@ -245,7 +245,7 @@
                     }
                 }
 
-                postUser.open("put", "http://localhost:3000/object/" + user.id);
+                postUser.open("put", "http://localhost:3000/" + user.id);
                 postUser.setRequestHeader("content-Type", "application/json")
                 postUser.send(JSON.stringify(user))
             }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practies 2</title>
+</head>
+
+<body>
+
+
+    <h1></h1>
+
+    <p></p>
+
+    <nav>
+
+        <ul>
+            <li>This a apple</li>
+            <li>This a car</li>
+            <li> This a pen</li>
+            <li>This a trin</li>
+            <li>This a book</li>
+        </ul>
+
+        <ol>
+
+            <li>html</li>
+            <li>css</li>
+            <li>boostrap</li>
+            <li>javascript</li>
+            <li>react js</li>
+
+        </ol>
+
+    </nav>
+
+    <span>
+        <h2>i am studing now</h2>
+        <h2>you are studing now</h2>
+        <h2>we are studing now</h2>
+        <h2>they are suding now</h2>
+        <h2>he is stuing now</h2>
+        <h2>she is stuing now</h2>
+        <h2>it is stuing now</h2>
+    </span>
+
+    <script>
+
+        document.querySelector("h1").innerHTML = "This remove element method"
+
+        document.querySelector("p").innerHTML = "When toch the particular word automaticaly delect (or) remove "
+
+        document.querySelector("span").style = "color:green"
+
+
+        function onclick() {
+
+        }
+
+        document.querySelector("ul").onclick = function (element) {
+            var parentNode = element.target.parentNode
+            parentNode.removeChild(element.target)
+        }
+
+        document.querySelector("ol").onclick = function (element) {
+            var parentNode = element.target.parentNode
+            parentNode.removeChild(element.target)
+        }
+
+        document.querySelector("span").onclick = function (element) {
+            var parentNode = element.target.parentNode
+            parentNode.removeChild(element.target)
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -9,8 +9,14 @@
 </head>
 
 <body>
+
+
+
     <script>
+
+
         var Emty = []
+
         function Users() {
             return new Promise((Resolve, Reject) => {
                 var GetUser = new XMLHttpRequest();
@@ -23,7 +29,7 @@
 
                     }
                 }
-                GetUser.open("get", "  http://localhost:3000/flower")
+                GetUser.open("get", " http://localhost:3000/object")
                 GetUser.send()
 
             })
@@ -31,13 +37,13 @@
         function DisplayUser() {
             console.log("All Users", Emty)
         }
-        // Users()
-        // .then(()=>{
-        //     DisplayUser()
-        // })
-        // .catch(()=>{
-        //     console.log("there no user")
-        // })
+        Users()
+            .then(() => {
+                DisplayUser()
+            })
+            .catch(() => {
+                console.log("there no user")
+            })
         async function DUser() {
             Emty = await Users();
             DisplayUser()
@@ -46,6 +52,7 @@
 
 
     </script>
+
 </body>
 
 </html>

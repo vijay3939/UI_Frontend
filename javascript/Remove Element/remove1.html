@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <h2> </h2>
+
+    <p></p>
+
+    <nav>
+
+        <ul>
+            <li>Lion-Tiger</li>
+            <li>Apple-Mango</li>
+            <li>Rose-Lilly</li>
+            <li>Biriyani-Whiterice</li>
+            <li>Wter-Juice</li>
+        </ul>
+
+        <ol>
+            <li>Jilla</li>
+            <li>Magadeera</li>
+            <li>Simha</li>
+            <li>Lengend</li>
+            <li>Akandha</li>
+            <li>Don</li>
+        </ol>
+        
+    </nav>
+
+    <span>
+        <p>Iam King Rock Star Surya</p>
+        <p>Iam this Surya Prakash</p>
+        <p>MAin Content Of this content</p>
+        <p>hero of the world</p>
+        <p>my lovely friends</p>
+    </span>
+
+
+    <Script>
+
+
+        document.querySelector("p").innerText = "when touch the particular product then remove that element in HTML"
+
+        document.querySelector("h2").innerText = "Delect (or) Remove"
+
+        document.querySelector("span").style = "color:red; border-bottom:dotted 2px;"
+
+
+        function onclick() {
+
+        }
+        //    function delect(){
+
+        //    }
+        document.querySelector("ul").onclick = function (e) {
+            var parentNode = e.target.parentNode
+            parentNode.removeChild(e.target)
+        }
+        document.querySelector("ol").onclick = function (e) {
+            var parentNode = e.target.parentNode
+            parentNode.removeChild(e.target)
+        }
+
+        document.querySelector("span").onclick = function (e) {
+            var parentNode = e.target.parentNode
+            parentNode.removeChild(e.target)
+        }
+
+
+
+    </Script>
+
+</body>
+
+</html>
