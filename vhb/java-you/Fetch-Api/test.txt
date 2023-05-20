@@ -1,2 +1,0 @@
-This is demo for Ajax calls.
-Ajax means Asnchronous Javascript and XML

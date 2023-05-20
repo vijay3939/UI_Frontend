@@ -1,2 +1,0 @@
-This is demo for ajax calls.
-AJAX menas asnchronous javascript.
