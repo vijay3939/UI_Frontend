@@ -5,239 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KFC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-
-    <style>
-      
-    </style>
+    <title>Claculator</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
-<body class="container-fluid">
+<style>
+   
+</style>
 
-    <header>
-        <img src="./Alluarjun.jpg" width="100%" height="400">
-    </header>
+<body>
 
-    <section>
-        <div class="accordion" id="kfcForm">
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <button data-bs-target="#customer" data-bs-toggle="collapse" class="btn btn-danger w-100">Customer
-                        Info</button>
-                </div>
-                <div class="accordion-collapse collapse show" id="customer" data-bs-parent="#kfcForm">
-                    <div class="accordion-body">
-                        <dl>
-                            <dt>Customer Name</dt>
-                            <dd><input type="text" class="form-control" id="txtName"></dd>
-                            <dt>Mobile</dt>
-                            <dd><input type="text" class="form-control" id="txtMobile"></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <button data-bs-target="#meal" data-bs-toggle="collapse" class="btn  btn-danger w-100">Select Your
-                        Meal</button>
-                </div>
-                <div class="accordion-collapse collapse" id="meal" data-bs-parent="#kfcForm">
-                    <div class="row mt-2">
-                        <div class="col p-4">
-                            <div class="card p-2">
-                                <img src="./OMR BURGER2.jpg" class="card-img-top" height="250">
-                                <div class="card-header">
-                                    <h2>OMG Burger</h2>
-                                </div>
-                                <div class="card-footer">
-                                    <h3>
-                                        <input type="radio" checked id="optBurger" name="meal" class="form-check-input"
-                                            value="OMG Burger"> &#8377; 120/-
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col p-4">
-                            <div class="card p-2">
-                                <img src="./ROLLER3.jpg" class="card-img-top" height="250">
-                                <div class="card-header">
-                                    <h2>OMG Roller</h2>
-                                </div>
-                                <div class="card-footer">
-                                    <h3>
-                                        <input type="radio" id="optRoller" name="meal" class="form-check-input"
-                                            value="OMG Roller"> &#8377; 100/-
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <button data-bs-target="#adon" data-bs-toggle="collapse" class="btn  btn-danger w-100">Select
-                        Ad-ON's</button>
-                </div>
-                <div class="accordion-collapse collapse" id="adon" data-bs-parent="#kfcForm">
-                    <div class="row mt-2">
-                        <div class="col p-4">
-                            <div class="card p-2">
-                                <img src="./HOT WINGS2.jpg" class="card-img-top" height="250">
-                                <div class="card-header">
-                                    <h2>Hot Wings</h2>
-                                </div>
-                                <div class="card-footer">
-                                    <h3>
-                                        <input type="checkbox" id="optWings" class="form-check-input" value="Hot Wings">
-                                        &#8377; 80/-
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
+    <h1 id="head">Calculator</h1>
 
-                        <div class="col p-4">
-                            <div class="card p-2">
-                                <img src="./KRUSHER BROWNIE2.jpg" class="card-img-top" height="250">
-                                <div class="card-header">
-                                    <h2>Krusher Brownie</h2>
-                                </div>
-                                <div class="card-footer">
-                                    <h3>
-                                        <input type="checkbox" id="optKrusher" class="form-check-input"
-                                            value="Krusher Brownie"> &#8377; 40/-
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col p-4">
-                            <div class="card p-2">
-                                <img src="./thums up.jpg" class="card-img-top" height="250">
-                                <div class="card-header">
-                                    <h2> ThumsUP</h2>
-                                </div>
-                                <div class="card-footer">
-                                    <h3>
-                                        <input type="checkbox" id="optThumsUP" class="form-check-input"
-                                            value="ThumsUP "> &#8377; 30/-
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div id="PlaceOrder">
-
-                <button class="   btn btn-warning btn-lg " data-bs-target="#summary" data-bs-toggle="modal"
-                    onclick="PlaceOrderClick()" class="btn   btn-warning ">
-
-                    Place Order
-                </button>
-                <br><br><br><br><br><br><br><br><br>
-
-            </div>
+    <div class="container">
 
 
-            <div>
 
-                <div class="modal fade" id="summary">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h2>Bill Summary</h2>
-                                <button data-bs-dismiss="modal" class="btn-close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <dl>
-                                    <dt>Customer Name</dt>
-                                    <dd id="lblName"></dd>
-                                    <dt>Mobile</dt>
-                                    <dd id="lblMobile"></dd>
-                                    <dt>Meal</dt>
-                                    <dd id="lblMeal"></dd>
-                                    <dt>Ad-ON's</dt>
-                                    <dd id="lblAdon"></dd>
-                                    <dt>Total</dt>
-                                    <dd id="lblTotal"></dd>
-                                </dl>
-                            </div>
-                            <div class="modal-footer">
-                                <button data-bs-dismiss="modal" class="btn btn-danger">OK</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="RESULT">
+            <p id="result">0</p>
         </div>
-    </section>
 
-    <script type="text/javascript">
-        function PlaceOrderClick() {
-            document.getElementById("lblName").innerHTML = document.getElementById("txtName").value;
-            document.getElementById("lblMobile").innerHTML = document.getElementById("txtMobile").value;
 
-            var mealName = "";
-            var adOnName = "";
-            var mealCost = 0;
-            var adonCost = 0;
-            var total = 0;
+        <div class="buttons">
 
-            var BurgerRadio = document.getElementById("optBurger");
-            var RollerRadio = document.getElementById("optRoller");
 
-            if (BurgerRadio.checked) {
-                mealName = BurgerRadio.value;
-                mealCost = 120;
-            }
+            <div class="row">
 
-            if (RollerRadio.checked) {
-                mealName = RollerRadio.value;
-                mealCost = 100;
-            }
+                <button>C</button>
+                <button>DEL</button>
+                <button>+</button>
+                <button>%</button>
 
-            var WingsCheckBox = document.getElementById("optWings");
-            var KrusherCheckBox = document.getElementById("optKrusher");
-            var ThumsUP = document.getElementById("optThumsUP")
+            </div>
 
-            if (WingsCheckBox.checked) {
-                adOnName += WingsCheckBox.value + "<br>";
-                adonCost = 80;
-                mealCost += adonCost;
-            }
+            <div class="row">
 
-            if (KrusherCheckBox.checked) {
-                adOnName += KrusherCheckBox.value + "<br>";
-                adonCost = 40;
-                mealCost += adonCost;
-            }
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>/</button>
 
-            if (ThumsUP.checked) {
-                adOnName += ThumsUP.value + "<br>";
-                adonCost = 30;
-                mealCost += adonCost;
-            }
+            </div>
 
-            total = mealCost;
+            <div class="row">
 
-            document.getElementById("lblMeal").innerHTML = mealName;
-            document.getElementById("lblAdon").innerHTML = adOnName;
-            document.getElementById("lblTotal").innerHTML = "&#8377;" + total;
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>*</button>
 
-        }
-    </script>
+            </div>
 
+            <div class="row">
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>-</button>
+
+            </div>
+
+
+            <div class="row">
+
+                <button id="dot">.</button>
+                <button>0</button>
+                <button id="equal">=</button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
 
 </body>
 
